@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Crime Clarity — Idaho Fidelity Foundation</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;1,8..60,400&family=IBM+Plex+Mono:wght@400;500;600&family=Barlow+Condensed:wght@600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --red: #C8102E;
+    --red-dark: #9B0C23;
+    --red-bright: #E8203E;
+    --blue: #002868;
+    --blue-mid: #003DA5;
+    --gold: #C9A84C;
+    --ink: #111110;
+    --white: #FFFFFF;
+    --off-white: #F5F3EE;
+    --gray-100: #F2F0EC;
+    --gray-200: #E0DDD6;
+    --gray-400: #9A9590;
+    --gray-600: #5C5852;
+    --gray-800: #2C2A27;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: 'Source Serif 4', Georgia, serif;
+    background: var(--ink);
+    color: var(--white);
+    overflow-x: hidden;
+  }
+
+  .uc-banner {
+    background: #f5a623;
+    color: #111;
+    text-align: center;
+    padding: 10px 24px;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    border-bottom: 2px solid #c8830a;
+  }
+  .uc-banner span { opacity: 0.6; margin: 0 12px; }
+
+  header {
+    background: var(--ink);
+    border-bottom: 3px solid var(--red);
+    box-shadow: 0 4px 30px rgba(0,0,0,0.5);
+  }
+  .header-inner {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 14px 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .logo-block { text-decoration: none; display: flex; flex-direction: column; gap: 1px; }
+  .logo-main {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 22px;
+    font-weight: 800;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--white);
+    line-height: 1;
+  }
+  .logo-main span { color: var(--red); }
+  .logo-sub {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 9px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--gold);
+    opacity: 0.8;
+  }
+  .back-link {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.5);
+    text-decoration: none;
+    border: 1px solid rgba(255,255,255,0.15);
+    padding: 8px 16px;
+    border-radius: 2px;
+    transition: 0.15s;
+  }
+  .back-link:hover { color: white; border-color: rgba(255,255,255,0.4); }
+
+  .hero {
+    background: var(--ink);
+    position: relative;
+    overflow: hidden;
+    padding: 96px 0 80px;
+  }
+  .hero-bg {
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(ellipse 60% 80% at 80% 50%, rgba(0,40,104,0.2) 0%, transparent 70%),
+      radial-gradient(ellipse 30% 60% at 5% 50%, rgba(200,16,46,0.12) 0%, transparent 60%),
+      repeating-linear-gradient(90deg, transparent, transparent 79px, rgba(255,255,255,0.012) 79px, rgba(255,255,255,0.012) 80px);
+  }
+  .hero-accent { position: absolute; bottom: 0; left: 0; right: 0; height: 3px; background: linear-gradient(90deg, var(--red) 0%, var(--gold) 50%, var(--blue-mid) 100%); }
+  .hero-inner {
+    position: relative;
+    z-index: 2;
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 0 32px;
+    text-align: center;
+  }
+  .hero-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 24px;
+  }
+  .live-dot {
+    width: 7px; height: 7px;
+    background: var(--red);
+    border-radius: 50%;
+    display: inline-block;
+    animation: pulse 2s infinite;
+  }
+  @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.3} }
+  .hero h1 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: clamp(48px, 7vw, 88px);
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.01em;
+    line-height: 0.95;
+    color: white;
+    margin-bottom: 28px;
+  }
+  .hero h1 em { font-style: normal; color: var(--red); }
+  .hero-deck {
+    font-size: 18px;
+    line-height: 1.8;
+    color: rgba(255,255,255,0.7);
+    max-width: 640px;
+    margin: 0 auto 40px;
+  }
+  .hero-deck strong { color: white; }
+
+  .stat-row {
+    display: flex;
+    justify-content: center;
+    gap: 0;
+    border-top: 1px solid rgba(255,255,255,0.08);
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+    margin: 0 auto;
+    max-width: 760px;
+  }
+  .stat-item {
+    flex: 1;
+    padding: 24px 16px;
+    text-align: center;
+    border-right: 1px solid rgba(255,255,255,0.08);
+  }
+  .stat-item:last-child { border-right: none; }
+  .stat-num {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 40px;
+    font-weight: 800;
+    color: var(--gold);
+    line-height: 1;
+  }
+  .stat-num.red { color: var(--red); }
+  .stat-label {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 9px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.4);
+    margin-top: 5px;
+  }
+
+  .found {
+    background: #0e0e0d;
+    padding: 80px 0;
+  }
+  .found-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 32px;
+  }
+  .section-kicker {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: var(--gold);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 12px;
+  }
+  .section-kicker::before { content: ''; width: 20px; height: 2px; background: var(--red); display: inline-block; }
+  .section-title {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: clamp(30px, 4vw, 48px);
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    color: var(--white);
+    line-height: 1;
+    margin-bottom: 48px;
+  }
+  .section-title span { color: var(--red); }
+  .findings-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2px;
+  }
+  .finding-card {
+    background: #161614;
+    padding: 28px;
+    border-top: 3px solid var(--red);
+  }
+  .finding-card.gold { border-top-color: var(--gold); }
+  .finding-card.blue { border-top-color: var(--blue-mid); }
+  .finding-num {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 52px;
+    font-weight: 800;
+    color: var(--red);
+    line-height: 1;
+    margin-bottom: 8px;
+  }
+  .finding-card.gold .finding-num { color: var(--gold); }
+  .finding-card.blue .finding-num { color: #4a90d9; }
+  .finding-title {
+    font-family: 'Oswald', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: white;
+    margin-bottom: 10px;
+  }
+  .finding-desc {
+    font-size: 13px;
+    color: rgba(255,255,255,0.55);
+    line-height: 1.7;
+  }
+
+  .happening {
+    background: var(--ink);
+    padding: 80px 0;
+  }
+  .happening-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 32px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 64px;
+    align-items: start;
+  }
+  .happening-body p {
+    font-size: 16px;
+    line-height: 1.85;
+    color: rgba(255,255,255,0.68);
+    margin-bottom: 18px;
+  }
+  .happening-body p strong { color: white; }
+  .happening-body p:last-child { margin-bottom: 0; }
+  .bills-box {
+    background: #161614;
+    border-left: 3px solid var(--red);
+    padding: 28px;
+  }
+  .bills-title {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 9px;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 20px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid rgba(255,255,255,0.07);
+  }
+  .bill {
+    padding: 14px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+  }
+  .bill:last-child { border-bottom: none; padding-bottom: 0; }
+  .bill-num {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--red);
+    margin-bottom: 4px;
+  }
+  .bill-name {
+    font-family: 'Oswald', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    color: white;
+    margin-bottom: 4px;
+  }
+  .bill-desc {
+    font-size: 12px;
+    color: rgba(255,255,255,0.45);
+    line-height: 1.5;
+  }
+
+  /* ── COUNTY TABLE ── */
+  .countytable-section {
+    background: #0e0e0d;
+    padding: 80px 0;
+  }
+  .countytable-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 32px;
+  }
+  .county-note {
+    font-size: 14px;
+    color: rgba(255,255,255,0.55);
+    line-height: 1.7;
+    max-width: 720px;
+    margin-bottom: 32px;
+  }
+  .county-table-wrap {
+    background: #161614;
+    border: 1px solid rgba(255,255,255,0.08);
+    max-height: 520px;
+    overflow-y: auto;
+  }
+  table.county-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 12px;
+  }
+  table.county-table th {
+    position: sticky;
+    top: 0;
+    background: #1d1d1a;
+    color: var(--gold);
+    text-align: left;
+    padding: 12px 14px;
+    font-size: 10px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    border-bottom: 2px solid var(--red);
+    white-space: nowrap;
+  }
+  table.county-table td {
+    padding: 9px 14px;
+    color: rgba(255,255,255,0.75);
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+    white-space: nowrap;
+  }
+  table.county-table tr:hover td { background: rgba(255,255,255,0.03); }
+  table.county-table td.county-name { color: white; font-family: 'Oswald', sans-serif; font-weight: 500; }
+  table.county-table td.hlpct { color: var(--red); font-weight: 600; }
+  table.county-table td.unk { color: var(--gray-400); }
+
+  .coming {
+    background: var(--red);
+    padding: 80px 0;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+  }
+  .coming::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: repeating-linear-gradient(-45deg, transparent, transparent 18px, rgba(255,255,255,0.03) 18px, rgba(255,255,255,0.03) 19px);
+  }
+  .coming-inner {
+    position: relative;
+    z-index: 2;
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 0 32px;
+  }
+  .coming-eyebrow {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.35em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.6);
+    margin-bottom: 20px;
+  }
+  .coming h2 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: clamp(36px, 5vw, 64px);
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    color: white;
+    line-height: 1;
+    margin-bottom: 24px;
+  }
+  .coming-text {
+    font-size: 17px;
+    line-height: 1.8;
+    color: rgba(255,255,255,0.82);
+    margin-bottom: 36px;
+  }
+  .coming-text strong { color: white; }
+  .coming-items {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: left;
+    background: rgba(0,0,0,0.2);
+    border-radius: 2px;
+    padding: 24px 28px;
+    margin-bottom: 36px;
+  }
+  .coming-item {
+    font-family: 'Source Serif 4', serif;
+    font-size: 14px;
+    color: rgba(255,255,255,0.78);
+    line-height: 1.6;
+    display: flex;
+    gap: 10px;
+  }
+  .coming-item::before { content: '→'; color: var(--gold); flex-shrink: 0; font-family: monospace; }
+  .notify-row { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; }
+  .btn-dark {
+    font-family: 'Oswald', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: white;
+    background: var(--ink);
+    border: none;
+    padding: 13px 28px;
+    border-radius: 2px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background 0.15s;
+    display: inline-block;
+  }
+  .btn-dark:hover { background: #222; }
+  .btn-ghost {
+    font-family: 'Oswald', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: white;
+    background: transparent;
+    border: 1px solid rgba(255,255,255,0.35);
+    padding: 13px 28px;
+    border-radius: 2px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: 0.15s;
+    display: inline-block;
+  }
+  .btn-ghost:hover { border-color: white; }
+
+  footer {
+    background: #080807;
+    border-top: 3px solid var(--red);
+    padding: 36px 0 24px;
+  }
+  .footer-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+  .footer-brand {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 18px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: white;
+  }
+  .footer-brand span { color: var(--red); }
+  .footer-links { display: flex; gap: 24px; flex-wrap: wrap; }
+  .footer-links a {
+    font-family: 'Source Serif 4', serif;
+    font-size: 13px;
+    color: rgba(255,255,255,0.45);
+    text-decoration: none;
+    transition: color 0.15s;
+  }
+  .footer-links a:hover { color: white; }
+  .footer-bottom {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 16px 32px 0;
+    border-top: 1px solid rgba(255,255,255,0.07);
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 9px;
+    letter-spacing: 0.08em;
+    color: rgba(255,255,255,0.22);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  @media (max-width: 800px) {
+    .findings-grid { grid-template-columns: 1fr; }
+    .happening-inner { grid-template-columns: 1fr; }
+    .stat-row { flex-wrap: wrap; }
+    .header-inner { padding: 10px 16px; }
+    .logo-main { font-size: 18px; }
+    .hero-inner { padding: 56px 16px; }
+    .hero h1 { font-size: 44px; }
+    .hero-deck { font-size: 15px; }
+    .stat-item { flex: 0 0 50%; }
+    .found-inner, .happening-inner, .countytable-inner, .coming-inner { padding: 0 16px; }
+    .footer-inner { padding: 0 16px; flex-direction: column; gap: 16px; }
+    .footer-links { gap: 14px; }
+    .footer-bottom { padding: 16px 16px 0; flex-direction: column; gap: 6px; }
+    .uc-banner { font-size: 9px; letter-spacing: 0.1em; padding: 8px 12px; }
+    .coming-items { padding: 16px 20px; }
+    .notify-row { flex-direction: column; align-items: stretch; }
+    .notify-row a { text-align: center; }
+  }
+</style>
+</head>
+<body>
+
+<div class="uc-banner">IDAHO PILOT <span>·</span> STATEWIDE DATA VERIFIED <span>·</span> NATIONAL EXPANSION IN PROGRESS</div>
+
+<header>
+  <div class="header-inner">
+    <a href="https://idahofidelityfoundation.org/index.html" class="logo-block">
+      <span class="logo-main">Crime <span>Clarity</span></span>
+      <span class="logo-sub">Idaho Fidelity Foundation</span>
+    </a>
+    <a href="https://idahofidelityfoundation.org/index.html" class="back-link">← Back to Home</a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-inner">
+    <div class="hero-eyebrow"><span class="live-dot"></span> Data Transparency Project · Idaho Pilot · <span id="heroDateRange">Loading…</span></div>
+    <h1>Crime <em>Clarity</em></h1>
+    <p class="hero-deck">
+      Idaho's own arrest data tracks race and ethnicity as two separate fields. Almost no one reports them together.
+      <strong>When only race is shown, Hispanic arrestees vanish into the "White" count</strong> — not because the data
+      doesn't exist, but because the reports don't separate it. We pull Idaho's arrest records straight from the
+      state's own system and put the fields back together, county by county, on a rolling basis.
+    </p>
+  </div>
+  <div class="hero-accent"></div>
+</section>
+
+<div class="stat-row" id="statRow">
+  <div class="stat-item">
+    <div class="stat-num" id="statTotal">—</div>
+    <div class="stat-label" id="statTotalLabel">Arrestees Analyzed</div>
+  </div>
+  <div class="stat-item">
+    <div class="stat-num red" id="statHispanic">—</div>
+    <div class="stat-label">Hispanic, Coded "White"</div>
+  </div>
+  <div class="stat-item">
+    <div class="stat-num" id="statPct">—</div>
+    <div class="stat-label">Of All "White" Arrests</div>
+  </div>
+  <div class="stat-item">
+    <div class="stat-num" id="statCounties">—</div>
+    <div class="stat-label">Of 44 Counties Covered</div>
+  </div>
+</div>
+
+<section class="found">
+  <div class="found-inner">
+    <div class="section-kicker">What We Found</div>
+    <h2 class="section-title">The Numbers <span>Behind the Number</span></h2>
+    <div class="findings-grid">
+      <div class="finding-card">
+        <div class="finding-num" id="findPct">—</div>
+        <div class="finding-title">Hidden Inside "White"</div>
+        <div class="finding-desc" id="findPctDesc">Loading…</div>
+      </div>
+      <div class="finding-card gold">
+        <div class="finding-num" id="findUnk">—</div>
+        <div class="finding-title">Unknown or Not Reported</div>
+        <div class="finding-desc">Idaho's own ethnicity field is left blank or unrecorded on a meaningful share of arrest
+          records statewide. We show that gap plainly instead of rounding it away.</div>
+      </div>
+      <div class="finding-card blue">
+        <div class="finding-num" id="findCounties">—</div>
+        <div class="finding-title">Every Idaho County</div>
+        <div class="finding-desc" id="findCountiesDesc">Sourced directly from the Idaho State Police's own NIBRS repository —
+          not a sample, not an estimate. Reconciled record-for-record against the statewide total.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="happening">
+  <div class="happening-inner">
+    <div class="happening-body">
+      <div class="section-kicker">What This Is About</div>
+      <h2 class="section-title" style="margin-bottom:24px;">Two Boxes, <span>One Number</span></h2>
+      <p>Every Idaho arrest report tracks two different things about the person arrested: their <strong>Race</strong>
+        (White, Black, American Indian/Alaska Native, Asian, or Unknown) and their <strong>Ethnicity</strong> (Hispanic
+        or Latino, or Not) — two separate boxes on the same form.</p>
+      <p>Most published crime statistics only show Race. That means a Hispanic arrestee of any race gets folded into
+        whichever race box was checked — usually White — with no way to tell them apart from anyone else in that box.</p>
+      <p>We pulled Idaho's actual 2024 arrest records, county by county, straight from the state's own reporting system,
+        and cross-referenced both fields to show what's actually inside the numbers everyone else reports as one.</p>
+    </div>
+    <div class="bills-box">
+      <div class="bills-title">The Two Fields</div>
+      <div class="bill">
+        <div class="bill-num">Data Element 49</div>
+        <div class="bill-name">Race of Arrestee</div>
+        <div class="bill-desc">White, Black or African American, American Indian or Alaska Native, Asian, Native
+          Hawaiian or Other Pacific Islander, or Unknown.</div>
+      </div>
+      <div class="bill">
+        <div class="bill-num">Data Element 50</div>
+        <div class="bill-name">Ethnicity of Arrestee</div>
+        <div class="bill-desc">Hispanic or Latino, Not Hispanic or Latino, or Unknown — reported as its own field,
+          separate from race, per the FBI's NIBRS technical specification.</div>
+      </div>
+      <div class="bill">
+        <div class="bill-num">Source</div>
+        <div class="bill-name">Idaho State Police NIBRS Repository</div>
+        <div class="bill-desc">Live query tool (nibrs.isp.idaho.gov). All 44 county pulls reconciled against the
+          statewide total for internal consistency.</div>
+      </div>
+      <div class="bill">
+        <div class="bill-num">Known Limitation</div>
+        <div class="bill-name">MENA Is Not Recoverable Here</div>
+        <div class="bill-desc">Under current federal standards, people of Middle Eastern or North African origin are
+          officially classified as "White" with no separate field — unlike Hispanic ethnicity, there's nothing in this
+          data to split out. That population stays invisible inside "White" until federal reporting adopts the new
+          MENA category (phase-in beginning 2028).</div>
+      </div>
+      <div class="bill">
+        <div class="bill-num">Open Question</div>
+        <div class="bill-name">County vs. Agency Reconciliation</div>
+        <div class="bill-desc">ISP's own tool returns different statewide totals depending on whether you query by
+          County or by Agency — a real discrepancy in the source system, not our pipeline. We've asked ISP's UCR
+          program directly which figure is authoritative and will update this page when we hear back. The White/Hispanic
+          split above reconciles cleanly under the County method we use; smaller race categories currently do not
+          reconcile between the two methods.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="countytable-section">
+  <div class="countytable-inner">
+    <div class="section-kicker">County by County</div>
+    <h2 class="section-title">Statewide <span>Breakdown</span></h2>
+    <p class="county-note">White-race arrestees only, since that's where the miscount hides. "Hisp. %" is the share of
+      each county's White-coded arrestees who were separately marked Hispanic or Latino. "Unk./NR" combines Unknown and
+      Not Reported ethnicity — the data-completeness gap, shown openly rather than smoothed over. 2024 data, sorted by
+      total White-coded arrests.</p>
+    <div class="county-table-wrap">
+      <table class="county-table" id="countyTable">
+        <thead>
+          <tr>
+            <th>County</th>
+            <th>White Total</th>
+            <th>Hispanic</th>
+            <th>Not Hisp.</th>
+            <th>Unk./NR</th>
+            <th>Hisp. %</th>
+          </tr>
+        </thead>
+        <tbody id="countyTableBody"></tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section class="coming">
+  <div class="coming-inner">
+    <div class="coming-eyebrow">Next Phase</div>
+    <h2>County-by-County Dashboard</h2>
+    <p class="coming-text">Idaho is the pilot. <strong>Once the data pipeline is fully automated, this becomes a live,
+      self-updating dashboard</strong> — then we take the same method national, using the identical fields every state
+      already reports to the FBI.</p>
+    <div class="coming-items">
+      <div class="coming-item">Interactive county map, updated as new arrest data posts to Idaho's system</div>
+      <div class="coming-item">Year-over-year historical trend tracking, not just a single snapshot</div>
+      <div class="coming-item">National expansion using the same NIBRS Race/Ethnicity fields every state reports</div>
+      <div class="coming-item">Full methodology page with a source citation behind every published figure</div>
+    </div>
+    <div class="notify-row">
+      <a href="https://idahofidelityfoundation.org/cdn-cgi/l/email-protection#c4b0adb4b784ada0a5acaba2ada0a1a8adb0bdeaa7aba9" class="btn-dark">Submit a Correction</a>
+      <a href="https://idahofidelityfoundation.org/index.html" class="btn-ghost">Back to Home</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">Idaho Fidelity <span>Foundation</span></div>
+    <div class="footer-links">
+      <a href="https://idahofidelityfoundation.org/index.html">Home</a>
+      <a href="https://idahofidelityfoundation.org/judicial-accountability-tracker">Judicial Accountability Tracker</a>
+      <a href="https://idahofidelityfoundation.org/leo-accountability.html">LEO Accountability Project</a>
+      <a href="https://idahoscore.com">Idaho Scorecard</a>
+      <a href="https://idaholedger.com">Idaho Ledger</a>
+      <a href="https://paypal.me/idahofidelity">Donate</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>&copy; 2026 Idaho Fidelity Foundation — idahofidelityfoundation.org</span>
+    <span>Every claim traceable to public record.</span>
+  </div>
+</footer>
+
+<script>
+async function loadCrimeClarityData() {
+  const DATA_URL = 'idaho_race_ethnicity.json'; // same folder as this page; pipeline writes here
+
+  let data;
+  try {
+    const resp = await fetch(DATA_URL, { cache: 'no-store' });
+    if (!resp.ok) throw new Error('HTTP ' + resp.status);
+    data = await resp.json();
+  } catch (err) {
+    document.getElementById('heroDateRange').textContent = 'Data file not found — run the pipeline first';
+    console.error('Crime Clarity: failed to load data file', err);
+    return;
+  }
+
+  const { statewide, counties, date_range, pulled_at } = data;
+  const white = statewide.White || { total: 0, hispanic: 0, not_hispanic: 0, unknown: 0, not_reported: 0 };
+
+  // Total arrestees analyzed = sum of all race totals statewide
+  const totalArrestees = Object.values(statewide).reduce((sum, r) => sum + (r.total || 0), 0);
+  const hispPct = white.total > 0 ? ((white.hispanic / white.total) * 100) : 0;
+  const unkNrTotal = Object.values(statewide).reduce((sum, r) => sum + (r.unknown || 0) + (r.not_reported || 0), 0);
+  const unkNrPct = totalArrestees > 0 ? ((unkNrTotal / totalArrestees) * 100) : 0;
+
+  document.getElementById('heroDateRange').textContent =
+    `${date_range.start} – ${date_range.end} · Updated ${pulled_at}`;
+
+  document.getElementById('statTotal').textContent = totalArrestees.toLocaleString();
+  document.getElementById('statTotalLabel').textContent = `Arrestees Analyzed, ${date_range.start.slice(-4)}–${date_range.end.slice(-4)}`;
+  document.getElementById('statHispanic').textContent = white.hispanic.toLocaleString();
+  document.getElementById('statPct').textContent = hispPct.toFixed(1) + '%';
+  document.getElementById('statCounties').textContent = Object.keys(counties).length;
+
+  document.getElementById('findPct').textContent = hispPct.toFixed(1) + '%';
+  document.getElementById('findPctDesc').textContent =
+    `Of the ${white.total.toLocaleString()} arrestees Idaho recorded as Race: White in this period, ` +
+    `${white.hispanic.toLocaleString()} were separately marked Ethnicity: Hispanic or Latino — a split ` +
+    `almost no public report ever shows.`;
+
+  document.getElementById('findUnk').textContent = unkNrPct.toFixed(1) + '%';
+  document.getElementById('findCounties').textContent = `${Object.keys(counties).length} of 44`;
+  document.getElementById('findCountiesDesc').textContent =
+    `Sourced directly from the Idaho State Police's own NIBRS repository — not a sample, not an estimate. ` +
+    `The White/Hispanic figures above are reconciled record-for-record against the statewide total.`;
+
+  // Build county table (White race row per county, sorted by total descending)
+  const tbody = document.getElementById('countyTableBody');
+  const rows = Object.entries(counties)
+    .map(([name, races]) => ({ name, ...(races.White || { total: 0, hispanic: 0, not_hispanic: 0, unknown: 0, not_reported: 0 }) }))
+    .sort((a, b) => b.total - a.total);
+
+  rows.forEach(row => {
+    const unkNr = (row.unknown || 0) + (row.not_reported || 0);
+    const pct = row.total > 0 ? ((row.hispanic / row.total) * 100).toFixed(1) : '0.0';
+    const tr = document.createElement('tr');
+    tr.innerHTML = `
+      <td class="county-name">${row.name}</td>
+      <td>${row.total.toLocaleString()}</td>
+      <td>${row.hispanic.toLocaleString()}</td>
+      <td>${row.not_hispanic.toLocaleString()}</td>
+      <td class="unk">${unkNr.toLocaleString()}</td>
+      <td class="hlpct">${pct}%</td>
+    `;
+    tbody.appendChild(tr);
+  });
+}
+
+loadCrimeClarityData();
+</script>
+
+</body>
+</html>
