@@ -1,0 +1,122 @@
+{
+  "generated_at": "2026-07-22",
+  "states": [
+    {
+      "state": "Texas",
+      "classification": "hides_it",
+      "date_range": {
+        "start": "01/01/2026",
+        "end": "07/22/2026"
+      },
+      "pulled_at": "2026-07-22",
+      "white_total": 189784,
+      "hispanic_total": 107202,
+      "hispanic_pct_of_white": 56.5,
+      "grand_total": 281157,
+      "source": "Texas NIBRS Repository (txucr.nibrs.com)",
+      "lean": "Red",
+      "size": "Large"
+    },
+    {
+      "state": "Illinois",
+      "classification": "hides_it",
+      "date_range": {
+        "start": "01/01/2026",
+        "end": "07/22/2026"
+      },
+      "pulled_at": "2026-07-22",
+      "white_total": 47913,
+      "hispanic_total": 13006,
+      "hispanic_pct_of_white": 27.1,
+      "grand_total": 83344,
+      "source": "Illinois NIBRS Repository (ilucr.nibrs.com)",
+      "lean": "Blue",
+      "size": "Large"
+    },
+    {
+      "state": "Rhode Island",
+      "classification": "hides_it",
+      "date_range": {
+        "start": "01/01/2026",
+        "end": "07/22/2026"
+      },
+      "pulled_at": "2026-07-22",
+      "white_total": 6074,
+      "hispanic_total": 1291,
+      "hispanic_pct_of_white": 21.3,
+      "grand_total": 8483,
+      "source": "Rhode Island NIBRS Repository (riucr.nibrs.com)",
+      "lean": "Blue",
+      "size": "Small"
+    },
+    {
+      "state": "Pennsylvania",
+      "classification": "hides_it",
+      "date_range": {
+        "start": "01/01/2026",
+        "end": "07/22/2026"
+      },
+      "pulled_at": "2026-07-22",
+      "white_total": 44836,
+      "hispanic_total": 7972,
+      "hispanic_pct_of_white": 17.8,
+      "grand_total": 71173,
+      "source": "Pennsylvania NIBRS Repository (www.ucr.pa.gov)",
+      "lean": "Swing",
+      "size": "Large"
+    },
+    {
+      "state": "Idaho",
+      "classification": "hides_it",
+      "date_range": {
+        "start": "01/01/2026",
+        "end": "07/22/2026"
+      },
+      "pulled_at": "2026-07-22",
+      "white_total": 15014,
+      "hispanic_total": 2645,
+      "hispanic_pct_of_white": 17.6,
+      "grand_total": 16837,
+      "source": "Idaho NIBRS Repository (nibrs.isp.idaho.gov)",
+      "lean": "Red",
+      "size": "Small"
+    },
+    {
+      "state": "South Dakota",
+      "classification": "hides_it",
+      "date_range": {
+        "start": "01/01/2026",
+        "end": "07/22/2026"
+      },
+      "pulled_at": "2026-07-22",
+      "white_total": 5179,
+      "hispanic_total": 480,
+      "hispanic_pct_of_white": 9.3,
+      "grand_total": 12006,
+      "source": "South Dakota NIBRS Repository (sdcrime.nibrs.com)",
+      "lean": "Red",
+      "size": "Small"
+    },
+    {
+      "state": "California",
+      "classification": "corrects_it",
+      "date_range": {
+        "start": null,
+        "end": "2024"
+      },
+      "pulled_at": "2026-07-22",
+      "white_total": 256322,
+      "hispanic_total": 370445,
+      "hispanic_pct_of_white": null,
+      "grand_total": 810487,
+      "source": "California DOJ OpenJustice (openjustice.doj.ca.gov)",
+      "lean": "Blue",
+      "size": "Large"
+    }
+  ],
+  "summary": {
+    "total_states": 7,
+    "hides_it_count": 6,
+    "corrects_it_count": 1
+  }
+}

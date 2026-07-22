@@ -1,0 +1,21 @@
+{
+  "state": "California",
+  "pulled_at": "2026-07-22",
+  "year": 2024,
+  "source": "California DOJ OpenJustice (openjustice.doj.ca.gov)",
+  "methodology": "California's race/ethnicity categories (White, Black, Hispanic, Other) are mutually exclusive -- Hispanic arrestees of any race are counted only in the Hispanic category, never folded into White.",
+  "classification": "corrects_it",
+  "statewide": {
+    "All": 810487,
+    "White": 256322,
+    "Black": 128417,
+    "Hispanic": 370445,
+    "Other": 55303
+  },
+  "validation": {
+    "all_total": 810487,
+    "sum_of_parts": 810487,
+    "diff": 0,
+    "reconciled": true
+  }
+}

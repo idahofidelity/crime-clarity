@@ -1,0 +1,60 @@
+{
+  "state": "Illinois",
+  "domain": "ilucr.nibrs.com",
+  "pulled_at": "2026-07-22",
+  "date_range": {
+    "start": "01/01/2026",
+    "end": "07/22/2026"
+  },
+  "source": "Illinois NIBRS Repository (ilucr.nibrs.com)",
+  "methodology": "FBI NIBRS Data Element 49 (Race of Arrestee) x Data Element 50 (Ethnicity of Arrestee)",
+  "classification": "hides_it",
+  "statewide": {
+    "White": {
+      "total": 47913,
+      "hispanic": 13006,
+      "not_hispanic": 25416,
+      "unknown": 2347,
+      "not_reported": 7144
+    },
+    "Black or African American": {
+      "total": 32140,
+      "hispanic": 340,
+      "not_hispanic": 25515,
+      "unknown": 1738,
+      "not_reported": 4547
+    },
+    "American Indian or Alaska Native": {
+      "total": 108,
+      "hispanic": 16,
+      "not_hispanic": 56,
+      "unknown": 17,
+      "not_reported": 19
+    },
+    "Asian": {
+      "total": 1183,
+      "hispanic": 122,
+      "not_hispanic": 911,
+      "unknown": 40,
+      "not_reported": 110
+    },
+    "Native Hawaiian or Other Pacific Islander": {
+      "total": 76,
+      "hispanic": 22,
+      "not_hispanic": 29,
+      "unknown": 3,
+      "not_reported": 22
+    },
+    "Unknown": {
+      "total": 1924,
+      "hispanic": 747,
+      "not_hispanic": 404,
+      "unknown": 276,
+      "not_reported": 497
+    }
+  },
+  "counties": {},
+  "validation": {
+    "skipped": true
+  }
+}

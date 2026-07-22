@@ -564,13 +564,13 @@
 <section class="hero">
   <div class="hero-bg"></div>
   <div class="hero-inner">
-    <div class="hero-eyebrow"><span class="live-dot"></span> Data Transparency Project · Idaho Pilot · <span id="heroDateRange">Loading…</span></div>
+    <div class="hero-eyebrow"><span class="live-dot"></span> Data Transparency Project · 7 States and Counting · <span id="heroDateRange">Loading…</span></div>
     <h1>Crime <em>Clarity</em></h1>
     <p class="hero-deck">
-      Idaho's own arrest data tracks race and ethnicity as two separate fields. Almost no one reports them together.
-      <strong>When only race is shown, Hispanic arrestees vanish into the "White" count</strong> — not because the data
-      doesn't exist, but because the reports don't separate it. We pull Idaho's arrest records straight from the
-      state's own system and put the fields back together, county by county, on a rolling basis.
+      Every state's own arrest data tracks race and ethnicity as two separate fields. Almost none of them report both
+      together. <strong>When only race is shown, Hispanic arrestees vanish into the "White" count</strong> — not
+      because the data doesn't exist, but because most public reporting doesn't separate it. We pull arrest records
+      straight from each state's own system and put the fields back together — state by state, on a rolling basis.
     </p>
   </div>
   <div class="hero-accent"></div>
@@ -675,10 +675,37 @@
   </div>
 </section>
 
+<section class="countytable-section" id="scorecardSection">
+  <div class="countytable-inner">
+    <div class="section-kicker">The National Scorecard</div>
+    <h2 class="section-title">Who Hides It, <span>Who Doesn't</span></h2>
+    <p class="county-note">Every state tracks Race and Ethnicity as separate fields on its own arrest forms — what
+      differs is whether the state's own public reporting keeps Hispanic arrestees separate from "White," or lets them
+      quietly get folded in. This isn't a red-state or blue-state pattern — it cuts across party lines. "Hides It"
+      states publish a "White" number that includes Hispanic arrestees with nothing to tell them apart. "Corrects It"
+      states already exclude Hispanic from White by default. Live data, pulled directly from each state's own system.</p>
+    <div class="county-table-wrap">
+      <table class="county-table" id="scorecardTable">
+        <thead>
+          <tr>
+            <th>State</th>
+            <th>Lean</th>
+            <th>Status</th>
+            <th>White Total</th>
+            <th>Hispanic in White</th>
+            <th>% Hidden</th>
+          </tr>
+        </thead>
+        <tbody id="scorecardTableBody"></tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
 <section class="countytable-section">
   <div class="countytable-inner">
-    <div class="section-kicker">County by County</div>
-    <h2 class="section-title">Statewide <span>Breakdown</span></h2>
+    <div class="section-kicker">Idaho, County by County</div>
+    <h2 class="section-title">The Pilot State, <span>In Detail</span></h2>
     <p class="county-note">White-race arrestees only, since that's where the miscount hides. "Hisp. %" is the share of
       each county's White-coded arrestees who were separately marked Hispanic or Latino. "Unk./NR" combines Unknown and
       Not Reported ethnicity — the data-completeness gap, shown openly rather than smoothed over. 2024 data, sorted by
@@ -704,14 +731,15 @@
 <section class="coming">
   <div class="coming-inner">
     <div class="coming-eyebrow">Next Phase</div>
-    <h2>County-by-County Dashboard</h2>
-    <p class="coming-text">Idaho is the pilot. <strong>Once the data pipeline is fully automated, this becomes a live,
-      self-updating dashboard</strong> — then we take the same method national, using the identical fields every state
+    <h2>Growing the Scorecard</h2>
+    <p class="coming-text">Idaho was the pilot. <strong>Seven states are live now, each pulled directly from its own
+      public system</strong> — we're adding more on a rolling basis, using the identical NIBRS fields every state
       already reports to the FBI.</p>
     <div class="coming-items">
-      <div class="coming-item">Interactive county map, updated as new arrest data posts to Idaho's system</div>
+      <div class="coming-item">More states added on a rolling basis — target: all 50</div>
+      <div class="coming-item">Interactive map showing every state's classification at a glance</div>
       <div class="coming-item">Year-over-year historical trend tracking, not just a single snapshot</div>
-      <div class="coming-item">National expansion using the same NIBRS Race/Ethnicity fields every state reports</div>
+      <div class="coming-item">County-level detail for every state, not just Idaho</div>
       <div class="coming-item">Full methodology page with a source citation behind every published figure</div>
     </div>
     <div class="notify-row">
@@ -741,7 +769,7 @@
 
 <script>
 async function loadCrimeClarityData() {
-  const DATA_URL = 'idaho_race_ethnicity.json'; // same folder as this page; pipeline writes here
+  const DATA_URL = 'data/idaho_race_ethnicity.json';
 
   let data;
   try {
@@ -806,7 +834,37 @@ async function loadCrimeClarityData() {
   });
 }
 
+async function loadScorecard() {
+  let data;
+  try {
+    const resp = await fetch('data/scorecard.json', { cache: 'no-store' });
+    if (!resp.ok) throw new Error('HTTP ' + resp.status);
+    data = await resp.json();
+  } catch (err) {
+    console.error('Crime Clarity: failed to load scorecard', err);
+    return;
+  }
+
+  const tbody = document.getElementById('scorecardTableBody');
+  data.states.forEach(s => {
+    const tr = document.createElement('tr');
+    const badgeColor = s.classification === 'hides_it' ? 'var(--red)' : '#3ea86b';
+    const badgeText = s.classification === 'hides_it' ? 'HIDES IT' : 'CORRECTS IT';
+    const pctDisplay = s.hispanic_pct_of_white !== null ? s.hispanic_pct_of_white + '%' : 'Tracked separately';
+    tr.innerHTML = `
+      <td class="county-name">${s.state}</td>
+      <td class="unk">${s.lean}</td>
+      <td><span style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:0.08em;color:${badgeColor};border:1px solid ${badgeColor};padding:3px 8px;border-radius:2px;">${badgeText}</span></td>
+      <td>${s.white_total.toLocaleString()}</td>
+      <td>${s.hispanic_total.toLocaleString()}</td>
+      <td class="hlpct">${pctDisplay}</td>
+    `;
+    tbody.appendChild(tr);
+  });
+}
+
 loadCrimeClarityData();
+loadScorecard();
 </script>
 
 </body>

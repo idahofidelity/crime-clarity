@@ -1,0 +1,60 @@
+{
+  "state": "Rhode Island",
+  "domain": "riucr.nibrs.com",
+  "pulled_at": "2026-07-22",
+  "date_range": {
+    "start": "01/01/2026",
+    "end": "07/22/2026"
+  },
+  "source": "Rhode Island NIBRS Repository (riucr.nibrs.com)",
+  "methodology": "FBI NIBRS Data Element 49 (Race of Arrestee) x Data Element 50 (Ethnicity of Arrestee)",
+  "classification": "hides_it",
+  "statewide": {
+    "White": {
+      "total": 6074,
+      "hispanic": 1291,
+      "not_hispanic": 4530,
+      "unknown": 81,
+      "not_reported": 172
+    },
+    "Black or African American": {
+      "total": 2247,
+      "hispanic": 490,
+      "not_hispanic": 1660,
+      "unknown": 61,
+      "not_reported": 36
+    },
+    "American Indian or Alaska Native": {
+      "total": 13,
+      "hispanic": 1,
+      "not_hispanic": 12,
+      "unknown": 0,
+      "not_reported": 0
+    },
+    "Asian": {
+      "total": 79,
+      "hispanic": 2,
+      "not_hispanic": 74,
+      "unknown": 2,
+      "not_reported": 1
+    },
+    "Native Hawaiian or Other Pacific Islander": {
+      "total": 7,
+      "hispanic": 1,
+      "not_hispanic": 6,
+      "unknown": 0,
+      "not_reported": 0
+    },
+    "Unknown": {
+      "total": 63,
+      "hispanic": 25,
+      "not_hispanic": 22,
+      "unknown": 15,
+      "not_reported": 1
+    }
+  },
+  "counties": {},
+  "validation": {
+    "skipped": true
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "state": "Texas",
+  "domain": "txucr.nibrs.com",
+  "pulled_at": "2026-07-22",
+  "date_range": {
+    "start": "01/01/2026",
+    "end": "07/22/2026"
+  },
+  "source": "Texas NIBRS Repository (txucr.nibrs.com)",
+  "methodology": "FBI NIBRS Data Element 49 (Race of Arrestee) x Data Element 50 (Ethnicity of Arrestee)",
+  "classification": "hides_it",
+  "statewide": {
+    "White": {
+      "total": 189784,
+      "hispanic": 107202,
+      "not_hispanic": 75352,
+      "unknown": 3235,
+      "not_reported": 3995
+    },
+    "Black or African American": {
+      "total": 82968,
+      "hispanic": 1935,
+      "not_hispanic": 77337,
+      "unknown": 2060,
+      "not_reported": 1636
+    },
+    "American Indian or Alaska Native": {
+      "total": 918,
+      "hispanic": 274,
+      "not_hispanic": 571,
+      "unknown": 51,
+      "not_reported": 22
+    },
+    "Asian": {
+      "total": 4773,
+      "hispanic": 544,
+      "not_hispanic": 3988,
+      "unknown": 113,
+      "not_reported": 128
+    },
+    "Native Hawaiian or Other Pacific Islander": {
+      "total": 908,
+      "hispanic": 609,
+      "not_hispanic": 258,
+      "unknown": 23,
+      "not_reported": 18
+    },
+    "Unknown": {
+      "total": 1806,
+      "hispanic": 767,
+      "not_hispanic": 375,
+      "unknown": 449,
+      "not_reported": 215
+    }
+  },
+  "counties": {},
+  "validation": {
+    "skipped": true
+  }
+}

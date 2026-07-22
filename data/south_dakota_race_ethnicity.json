@@ -1,0 +1,60 @@
+{
+  "state": "South Dakota",
+  "domain": "sdcrime.nibrs.com",
+  "pulled_at": "2026-07-22",
+  "date_range": {
+    "start": "01/01/2026",
+    "end": "07/22/2026"
+  },
+  "source": "South Dakota NIBRS Repository (sdcrime.nibrs.com)",
+  "methodology": "FBI NIBRS Data Element 49 (Race of Arrestee) x Data Element 50 (Ethnicity of Arrestee)",
+  "classification": "hides_it",
+  "statewide": {
+    "White": {
+      "total": 5179,
+      "hispanic": 480,
+      "not_hispanic": 4032,
+      "unknown": 192,
+      "not_reported": 475
+    },
+    "Black or African American": {
+      "total": 1037,
+      "hispanic": 18,
+      "not_hispanic": 917,
+      "unknown": 44,
+      "not_reported": 58
+    },
+    "American Indian or Alaska Native": {
+      "total": 4189,
+      "hispanic": 160,
+      "not_hispanic": 3706,
+      "unknown": 170,
+      "not_reported": 153
+    },
+    "Asian": {
+      "total": 92,
+      "hispanic": 8,
+      "not_hispanic": 74,
+      "unknown": 5,
+      "not_reported": 5
+    },
+    "Native Hawaiian or Other Pacific Islander": {
+      "total": 39,
+      "hispanic": 3,
+      "not_hispanic": 30,
+      "unknown": 2,
+      "not_reported": 4
+    },
+    "Unknown": {
+      "total": 1470,
+      "hispanic": 56,
+      "not_hispanic": 180,
+      "unknown": 841,
+      "not_reported": 393
+    }
+  },
+  "counties": {},
+  "validation": {
+    "skipped": true
+  }
+}

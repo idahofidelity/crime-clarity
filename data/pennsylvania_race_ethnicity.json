@@ -1,0 +1,60 @@
+{
+  "state": "Pennsylvania",
+  "domain": "www.ucr.pa.gov",
+  "pulled_at": "2026-07-22",
+  "date_range": {
+    "start": "01/01/2026",
+    "end": "07/22/2026"
+  },
+  "source": "Pennsylvania NIBRS Repository (www.ucr.pa.gov)",
+  "methodology": "FBI NIBRS Data Element 49 (Race of Arrestee) x Data Element 50 (Ethnicity of Arrestee)",
+  "classification": "hides_it",
+  "statewide": {
+    "White": {
+      "total": 44836,
+      "hispanic": 7972,
+      "not_hispanic": 35664,
+      "unknown": 888,
+      "not_reported": 312
+    },
+    "Black or African American": {
+      "total": 24657,
+      "hispanic": 893,
+      "not_hispanic": 21736,
+      "unknown": 1852,
+      "not_reported": 176
+    },
+    "American Indian or Alaska Native": {
+      "total": 81,
+      "hispanic": 6,
+      "not_hispanic": 71,
+      "unknown": 4,
+      "not_reported": 0
+    },
+    "Asian": {
+      "total": 771,
+      "hispanic": 16,
+      "not_hispanic": 717,
+      "unknown": 28,
+      "not_reported": 10
+    },
+    "Native Hawaiian or Other Pacific Islander": {
+      "total": 52,
+      "hispanic": 12,
+      "not_hispanic": 38,
+      "unknown": 2,
+      "not_reported": 0
+    },
+    "Unknown": {
+      "total": 776,
+      "hispanic": 196,
+      "not_hispanic": 204,
+      "unknown": 371,
+      "not_reported": 5
+    }
+  },
+  "counties": {},
+  "validation": {
+    "skipped": true
+  }
+}
