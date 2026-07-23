@@ -921,7 +921,10 @@ async function loadScorecard() {
 }
 
 async function loadRegistryData() {
-  const files = [{ state: 'Idaho', file: 'data/idaho_sor_race_tally.json' }];
+  const files = [
+    { state: 'Idaho', file: 'data/idaho_sor_race_tally.json' },
+    { state: 'Illinois', file: 'data/illinois_sor_race_tally.json' }
+  ];
   const tbody = document.getElementById('registryTableBody');
 
   for (const { state, file } of files) {
@@ -935,6 +938,7 @@ async function loadRegistryData() {
       continue;
     }
     const r = d.race_totals;
+    const asian = (r['ASIAN OR PACIFIC ISLANDER'] || r['ASIAN'] || 0);
     const tr = document.createElement('tr');
     tr.innerHTML = `
       <td class="county-name">${state}</td>
@@ -943,7 +947,7 @@ async function loadRegistryData() {
       <td>${(r['WHITE']||0).toLocaleString()}</td>
       <td>${(r['BLACK']||0).toLocaleString()}</td>
       <td>${(r['AMERICAN INDIAN OR ALASKAN NATIVE']||0).toLocaleString()}</td>
-      <td>${(r['ASIAN OR PACIFIC ISLANDER']||0).toLocaleString()}</td>
+      <td>${asian.toLocaleString()}</td>
       <td class="unk">${(r['UNKNOWN']||0).toLocaleString()}</td>
     `;
     tbody.appendChild(tr);

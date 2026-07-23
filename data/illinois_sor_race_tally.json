@@ -1,0 +1,28 @@
+{
+  "state": "Illinois",
+  "pulled_at": "2026-07-23",
+  "source": "Illinois State Police Sex Offender Registry (sor.isp.illinois.gov/sorpublic)",
+  "scope_note": "Aggregate Race tally only, computed entirely client-side in-browser from the official bulk CSV export -- the raw file (containing names, addresses, photos references) was never saved to disk or retained anywhere. Only the SHA-256 checksum of the file and the resulting aggregate counts were kept.",
+  "finding": "This registry has NO separate Ethnicity field at all -- confirmed directly from the CSV column headers (Registration Number, Name, Address, City, State, Zip Code, Residence County, Height, Weight, Race, Gender, Date of Birth, Status, Offender Type, ...). Same structural gap as Idaho: no way to recover Hispanic or MENA representation within the White count.",
+  "race_totals": {
+    "WHITE": 21663,
+    "BLACK": 9962,
+    "UNKNOWN": 3449,
+    "ASIAN": 247,
+    "AMERICAN INDIAN OR ALASKAN NATIVE": 126
+  },
+  "grand_total_claimed": 35447,
+  "grand_total_scanned": 35447,
+  "provenance": {
+    "source_url": "https://sor.isp.illinois.gov/sor-server/public/offender/sor/report",
+    "pulled_at": "2026-07-23T00:00:00Z",
+    "method": "bulk_export",
+    "file_checksum_sha256": "52d045fde252dd45c0eda03532694d30d2516a72ae5b4d4cfce7a35d946de632",
+    "file_size_bytes": 10053802,
+    "claimed_count": 35447,
+    "processed_count": 35447,
+    "extraction_field": "Race",
+    "race_code_mapping": "W=White, B=Black, I=American Indian/Alaska Native, A=Asian, U=Unknown (standard NCIC race codes)",
+    "verification_note": "Any third party can independently reproduce this: search type 'Sex Offender', click 'Download All' on sor.isp.illinois.gov/sorpublic, and compare row counts and the Race column distribution against this checksum-verified snapshot."
+  }
+}
