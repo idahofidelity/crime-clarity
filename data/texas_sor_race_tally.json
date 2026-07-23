@@ -1,0 +1,2181 @@
+{
+  "state": "Texas",
+  "pulled_at": "2026-07-23",
+  "source": "Texas DPS Public Sex Offender Registry (sor.dps.texas.gov/PublicSite)",
+  "scope_note": "Aggregate Race tally only, computed entirely client-side in-browser from per-county Excel exports -- raw files never saved to disk or retained. Only per-file and combined SHA-256 checksums plus resulting aggregate counts were kept.",
+  "finding": "This registry has NO separate Ethnicity field at all -- confirmed directly from the Excel column headers (Name, Birth Date, Sex, Race, Address). Same structural gap as Idaho and Illinois: no way to recover Hispanic or MENA representation within the White count.",
+  "race_totals": {
+    "WHITE": 61076,
+    "BLACK": 17808,
+    "AMERICAN INDIAN OR ALASKAN NATIVE": 110,
+    "ASIAN": 549,
+    "UNKNOWN": 130
+  },
+  "grand_total_claimed": 79673,
+  "grand_total_scanned": 79673,
+  "provenance": {
+    "source_url": "https://sor.dps.texas.gov/PublicSite/Search/Default/ExcelByCounty?COU_COD={county_code}",
+    "pulled_at": "2026-07-23T00:00:00Z",
+    "method": "bulk_export",
+    "combined_checksum_sha256": "125a0a0ab79456bb6cc4b4c56f5714c3e332a528801b0776e3d58a829dc74ad5",
+    "combined_checksum_method": "SHA-256 of the concatenation (pipe-delimited) of all 255 individual per-county file checksums, in county-code order",
+    "claimed_count": 79673,
+    "processed_count": 79673,
+    "counties_processed": 255,
+    "extraction_field": "Race",
+    "race_code_mapping": "W=White, B=Black, I=American Indian/Alaska Native, A=Asian, U=Unknown (standard NCIC race codes)",
+    "verification_note": "Any third party can independently reproduce this: for each of the 254 Texas counties, visit sor.dps.texas.gov/PublicSite/Search/Default/SearchByCounty, select the county, and download Complete Search Results (Excel) -- compare row counts and Race column distribution."
+  },
+  "by_county": {
+    "ANDERSON": {
+      "code": "001",
+      "row_count": 443,
+      "race_tally": {
+        "W": 343,
+        "B": 100
+      }
+    },
+    "ANDREWS": {
+      "code": "002",
+      "row_count": 87,
+      "race_tally": {
+        "W": 79,
+        "B": 8
+      }
+    },
+    "ANGELINA": {
+      "code": "003",
+      "row_count": 326,
+      "race_tally": {
+        "W": 242,
+        "B": 84
+      }
+    },
+    "ARANSAS": {
+      "code": "004",
+      "row_count": 111,
+      "race_tally": {
+        "W": 105,
+        "B": 3,
+        "I": 2,
+        "A": 1
+      }
+    },
+    "ARCHER": {
+      "code": "005",
+      "row_count": 17,
+      "race_tally": {
+        "W": 17
+      }
+    },
+    "ARMSTRONG": {
+      "code": "006",
+      "row_count": 7,
+      "race_tally": {
+        "W": 7
+      }
+    },
+    "ATASCOSA": {
+      "code": "007",
+      "row_count": 175,
+      "race_tally": {
+        "W": 167,
+        "B": 8
+      }
+    },
+    "AUSTIN": {
+      "code": "008",
+      "row_count": 64,
+      "race_tally": {
+        "W": 42,
+        "B": 22
+      }
+    },
+    "BAILEY": {
+      "code": "009",
+      "row_count": 17,
+      "race_tally": {
+        "W": 14,
+        "B": 3
+      }
+    },
+    "BANDERA": {
+      "code": "010",
+      "row_count": 88,
+      "race_tally": {
+        "W": 87,
+        "U": 1
+      }
+    },
+    "BASTROP": {
+      "code": "011",
+      "row_count": 347,
+      "race_tally": {
+        "W": 291,
+        "B": 55,
+        "A": 1
+      }
+    },
+    "BAYLOR": {
+      "code": "012",
+      "row_count": 14,
+      "race_tally": {
+        "W": 14
+      }
+    },
+    "BEE": {
+      "code": "013",
+      "row_count": 223,
+      "race_tally": {
+        "W": 194,
+        "I": 1,
+        "B": 28
+      }
+    },
+    "BELL": {
+      "code": "014",
+      "row_count": 982,
+      "race_tally": {
+        "W": 662,
+        "B": 301,
+        "A": 18,
+        "I": 1
+      }
+    },
+    "BEXAR": {
+      "code": "015",
+      "row_count": 4581,
+      "race_tally": {
+        "W": 3942,
+        "I": 6,
+        "B": 600,
+        "A": 16,
+        "U": 17
+      }
+    },
+    "BLANCO": {
+      "code": "016",
+      "row_count": 26,
+      "race_tally": {
+        "W": 25,
+        "B": 1
+      }
+    },
+    "BORDEN": {
+      "code": "017",
+      "row_count": 1,
+      "race_tally": {
+        "W": 1
+      }
+    },
+    "BOSQUE": {
+      "code": "018",
+      "row_count": 86,
+      "race_tally": {
+        "W": 82,
+        "B": 4
+      }
+    },
+    "BOWIE": {
+      "code": "019",
+      "row_count": 390,
+      "race_tally": {
+        "B": 151,
+        "W": 236,
+        "I": 1,
+        "A": 2
+      }
+    },
+    "BRAZORIA": {
+      "code": "020",
+      "row_count": 700,
+      "race_tally": {
+        "W": 571,
+        "B": 121,
+        "A": 7,
+        "U": 1
+      }
+    },
+    "BRAZOS": {
+      "code": "021",
+      "row_count": 298,
+      "race_tally": {
+        "B": 85,
+        "W": 211,
+        "A": 2
+      }
+    },
+    "BREWSTER": {
+      "code": "022",
+      "row_count": 22,
+      "race_tally": {
+        "W": 22
+      }
+    },
+    "BRISCOE": {
+      "code": "023",
+      "row_count": 6,
+      "race_tally": {
+        "W": 6
+      }
+    },
+    "BROOKS": {
+      "code": "024",
+      "row_count": 32,
+      "race_tally": {
+        "W": 32
+      }
+    },
+    "BROWN": {
+      "code": "025",
+      "row_count": 198,
+      "race_tally": {
+        "W": 175,
+        "B": 21,
+        "I": 1,
+        "U": 1
+      }
+    },
+    "BURLESON": {
+      "code": "026",
+      "row_count": 124,
+      "race_tally": {
+        "W": 92,
+        "B": 32
+      }
+    },
+    "BURNET": {
+      "code": "027",
+      "row_count": 124,
+      "race_tally": {
+        "W": 120,
+        "B": 4
+      }
+    },
+    "CALDWELL": {
+      "code": "028",
+      "row_count": 233,
+      "race_tally": {
+        "W": 215,
+        "B": 18
+      }
+    },
+    "CALHOUN": {
+      "code": "029",
+      "row_count": 87,
+      "race_tally": {
+        "W": 75,
+        "B": 10,
+        "A": 2
+      }
+    },
+    "CALLAHAN": {
+      "code": "030",
+      "row_count": 108,
+      "race_tally": {
+        "W": 100,
+        "B": 7,
+        "A": 1
+      }
+    },
+    "CAMERON": {
+      "code": "031",
+      "row_count": 961,
+      "race_tally": {
+        "W": 942,
+        "U": 5,
+        "B": 12,
+        "I": 1,
+        "A": 1
+      }
+    },
+    "CAMP": {
+      "code": "032",
+      "row_count": 59,
+      "race_tally": {
+        "W": 44,
+        "B": 14,
+        "A": 1
+      }
+    },
+    "CARSON": {
+      "code": "033",
+      "row_count": 18,
+      "race_tally": {
+        "W": 17,
+        "U": 1
+      }
+    },
+    "CASS": {
+      "code": "034",
+      "row_count": 159,
+      "race_tally": {
+        "W": 110,
+        "B": 47,
+        "I": 1,
+        "U": 1
+      }
+    },
+    "CASTRO": {
+      "code": "035",
+      "row_count": 31,
+      "race_tally": {
+        "W": 29,
+        "B": 2
+      }
+    },
+    "CHAMBERS": {
+      "code": "036",
+      "row_count": 115,
+      "race_tally": {
+        "W": 94,
+        "B": 21
+      }
+    },
+    "CHEROKEE": {
+      "code": "037",
+      "row_count": 214,
+      "race_tally": {
+        "W": 172,
+        "B": 42
+      }
+    },
+    "CHILDRESS": {
+      "code": "038",
+      "row_count": 33,
+      "race_tally": {
+        "W": 25,
+        "B": 8
+      }
+    },
+    "CLAY": {
+      "code": "039",
+      "row_count": 34,
+      "race_tally": {
+        "W": 34
+      }
+    },
+    "COCHRAN": {
+      "code": "040",
+      "row_count": 10,
+      "race_tally": {
+        "W": 9,
+        "B": 1
+      }
+    },
+    "COKE": {
+      "code": "041",
+      "row_count": 9,
+      "race_tally": {
+        "W": 9
+      }
+    },
+    "COLEMAN": {
+      "code": "042",
+      "row_count": 52,
+      "race_tally": {
+        "W": 51,
+        "B": 1
+      }
+    },
+    "COLLIN": {
+      "code": "043",
+      "row_count": 675,
+      "race_tally": {
+        "W": 551,
+        "A": 18,
+        "B": 104,
+        "U": 1,
+        "I": 1
+      }
+    },
+    "COLLINGSWORTH": {
+      "code": "044",
+      "row_count": 13,
+      "race_tally": {
+        "W": 13
+      }
+    },
+    "COLORADO": {
+      "code": "045",
+      "row_count": 80,
+      "race_tally": {
+        "W": 51,
+        "B": 29
+      }
+    },
+    "COMAL": {
+      "code": "046",
+      "row_count": 196,
+      "race_tally": {
+        "W": 181,
+        "B": 13,
+        "A": 2
+      }
+    },
+    "COMANCHE": {
+      "code": "047",
+      "row_count": 49,
+      "race_tally": {
+        "W": 48,
+        "B": 1
+      }
+    },
+    "CONCHO": {
+      "code": "048",
+      "row_count": 20,
+      "race_tally": {
+        "W": 20
+      }
+    },
+    "COOKE": {
+      "code": "049",
+      "row_count": 98,
+      "race_tally": {
+        "W": 95,
+        "B": 3
+      }
+    },
+    "CORYELL": {
+      "code": "050",
+      "row_count": 227,
+      "race_tally": {
+        "W": 188,
+        "B": 37,
+        "A": 2
+      }
+    },
+    "COTTLE": {
+      "code": "051",
+      "row_count": 3,
+      "race_tally": {
+        "B": 2,
+        "W": 1
+      }
+    },
+    "CRANE": {
+      "code": "052",
+      "row_count": 20,
+      "race_tally": {
+        "W": 18,
+        "B": 2
+      }
+    },
+    "CROCKETT": {
+      "code": "053",
+      "row_count": 16,
+      "race_tally": {
+        "W": 15,
+        "B": 1
+      }
+    },
+    "CROSBY": {
+      "code": "054",
+      "row_count": 36,
+      "race_tally": {
+        "W": 34,
+        "B": 2
+      }
+    },
+    "CULBERSON": {
+      "code": "055",
+      "row_count": 7,
+      "race_tally": {
+        "W": 7
+      }
+    },
+    "DALLAM": {
+      "code": "056",
+      "row_count": 42,
+      "race_tally": {
+        "W": 37,
+        "B": 4,
+        "U": 1
+      }
+    },
+    "DALLAS": {
+      "code": "057",
+      "row_count": 6578,
+      "race_tally": {
+        "W": 3359,
+        "B": 3140,
+        "A": 66,
+        "U": 5,
+        "I": 8
+      }
+    },
+    "DAWSON": {
+      "code": "058",
+      "row_count": 91,
+      "race_tally": {
+        "W": 80,
+        "B": 10,
+        "U": 1
+      }
+    },
+    "DEAF SMITH": {
+      "code": "059",
+      "row_count": 91,
+      "race_tally": {
+        "W": 88,
+        "B": 3
+      }
+    },
+    "DELTA": {
+      "code": "060",
+      "row_count": 28,
+      "race_tally": {
+        "W": 24,
+        "B": 4
+      }
+    },
+    "DENTON": {
+      "code": "061",
+      "row_count": 646,
+      "race_tally": {
+        "W": 510,
+        "B": 116,
+        "A": 17,
+        "I": 2,
+        "U": 1
+      }
+    },
+    "DEWITT": {
+      "code": "062",
+      "row_count": 99,
+      "race_tally": {
+        "W": 81,
+        "B": 18
+      }
+    },
+    "DICKENS": {
+      "code": "063",
+      "row_count": 9,
+      "race_tally": {
+        "W": 8,
+        "B": 1
+      }
+    },
+    "DIMMIT": {
+      "code": "064",
+      "row_count": 44,
+      "race_tally": {
+        "W": 44
+      }
+    },
+    "DONLEY": {
+      "code": "065",
+      "row_count": 37,
+      "race_tally": {
+        "W": 35,
+        "B": 2
+      }
+    },
+    "DUVAL": {
+      "code": "066",
+      "row_count": 55,
+      "race_tally": {
+        "I": 1,
+        "W": 53,
+        "B": 1
+      }
+    },
+    "EASTLAND": {
+      "code": "067",
+      "row_count": 98,
+      "race_tally": {
+        "W": 94,
+        "B": 3,
+        "I": 1
+      }
+    },
+    "ECTOR": {
+      "code": "068",
+      "row_count": 511,
+      "race_tally": {
+        "W": 450,
+        "B": 59,
+        "U": 2
+      }
+    },
+    "EDWARDS": {
+      "code": "069",
+      "row_count": 15,
+      "race_tally": {
+        "W": 15
+      }
+    },
+    "EL PASO": {
+      "code": "071",
+      "row_count": 1850,
+      "race_tally": {
+        "W": 1673,
+        "B": 163,
+        "I": 3,
+        "A": 10,
+        "U": 1
+      }
+    },
+    "ELLIS": {
+      "code": "070",
+      "row_count": 448,
+      "race_tally": {
+        "W": 349,
+        "B": 96,
+        "A": 2,
+        "I": 1
+      }
+    },
+    "ERATH": {
+      "code": "072",
+      "row_count": 60,
+      "race_tally": {
+        "W": 59,
+        "B": 1
+      }
+    },
+    "FALLS": {
+      "code": "073",
+      "row_count": 116,
+      "race_tally": {
+        "W": 68,
+        "B": 46,
+        "U": 1,
+        "I": 1
+      }
+    },
+    "FANNIN": {
+      "code": "074",
+      "row_count": 219,
+      "race_tally": {
+        "W": 180,
+        "B": 37,
+        "I": 2
+      }
+    },
+    "FAYETTE": {
+      "code": "075",
+      "row_count": 102,
+      "race_tally": {
+        "W": 79,
+        "B": 23
+      }
+    },
+    "FISHER": {
+      "code": "076",
+      "row_count": 20,
+      "race_tally": {
+        "W": 17,
+        "I": 1,
+        "B": 2
+      }
+    },
+    "FLOYD": {
+      "code": "077",
+      "row_count": 15,
+      "race_tally": {
+        "W": 13,
+        "B": 2
+      }
+    },
+    "FOARD": {
+      "code": "078",
+      "row_count": 2,
+      "race_tally": {
+        "W": 2
+      }
+    },
+    "FORT BEND": {
+      "code": "079",
+      "row_count": 720,
+      "race_tally": {
+        "A": 24,
+        "B": 279,
+        "W": 414,
+        "I": 2,
+        "U": 1
+      }
+    },
+    "FRANKLIN": {
+      "code": "080",
+      "row_count": 36,
+      "race_tally": {
+        "W": 31,
+        "B": 5
+      }
+    },
+    "FREESTONE": {
+      "code": "081",
+      "row_count": 125,
+      "race_tally": {
+        "B": 28,
+        "W": 97
+      }
+    },
+    "FRIO": {
+      "code": "082",
+      "row_count": 78,
+      "race_tally": {
+        "W": 75,
+        "B": 3
+      }
+    },
+    "GAINES": {
+      "code": "083",
+      "row_count": 54,
+      "race_tally": {
+        "W": 54
+      }
+    },
+    "GALVESTON": {
+      "code": "084",
+      "row_count": 781,
+      "race_tally": {
+        "W": 579,
+        "B": 194,
+        "A": 6,
+        "U": 2
+      }
+    },
+    "GARZA": {
+      "code": "085",
+      "row_count": 28,
+      "race_tally": {
+        "W": 26,
+        "B": 1,
+        "A": 1
+      }
+    },
+    "GILLESPIE": {
+      "code": "086",
+      "row_count": 60,
+      "race_tally": {
+        "W": 57,
+        "B": 3
+      }
+    },
+    "GLASSCOCK": {
+      "code": "087",
+      "row_count": 2,
+      "race_tally": {
+        "W": 2
+      }
+    },
+    "GOLIAD": {
+      "code": "088",
+      "row_count": 22,
+      "race_tally": {
+        "W": 17,
+        "B": 5
+      }
+    },
+    "GONZALES": {
+      "code": "089",
+      "row_count": 70,
+      "race_tally": {
+        "W": 61,
+        "B": 9
+      }
+    },
+    "GRAY": {
+      "code": "090",
+      "row_count": 86,
+      "race_tally": {
+        "W": 80,
+        "B": 5,
+        "A": 1
+      }
+    },
+    "GRAYSON": {
+      "code": "091",
+      "row_count": 404,
+      "race_tally": {
+        "W": 356,
+        "B": 47,
+        "I": 1
+      }
+    },
+    "GREGG": {
+      "code": "092",
+      "row_count": 403,
+      "race_tally": {
+        "B": 132,
+        "W": 263,
+        "A": 4,
+        "U": 3,
+        "I": 1
+      }
+    },
+    "GRIMES": {
+      "code": "093",
+      "row_count": 159,
+      "race_tally": {
+        "W": 123,
+        "B": 33,
+        "U": 2,
+        "I": 1
+      }
+    },
+    "GUADALUPE": {
+      "code": "094",
+      "row_count": 360,
+      "race_tally": {
+        "W": 315,
+        "B": 42,
+        "I": 1,
+        "A": 1,
+        "U": 1
+      }
+    },
+    "HALE": {
+      "code": "095",
+      "row_count": 130,
+      "race_tally": {
+        "W": 119,
+        "B": 11
+      }
+    },
+    "HALL": {
+      "code": "096",
+      "row_count": 11,
+      "race_tally": {
+        "B": 1,
+        "W": 10
+      }
+    },
+    "HAMILTON": {
+      "code": "097",
+      "row_count": 52,
+      "race_tally": {
+        "W": 51,
+        "B": 1
+      }
+    },
+    "HANSFORD": {
+      "code": "098",
+      "row_count": 8,
+      "race_tally": {
+        "W": 8
+      }
+    },
+    "HARDEMAN": {
+      "code": "099",
+      "row_count": 10,
+      "race_tally": {
+        "W": 8,
+        "B": 2
+      }
+    },
+    "HARDIN": {
+      "code": "100",
+      "row_count": 201,
+      "race_tally": {
+        "B": 17,
+        "W": 184
+      }
+    },
+    "HARRIS": {
+      "code": "101",
+      "row_count": 10721,
+      "race_tally": {
+        "B": 4081,
+        "W": 6478,
+        "A": 132,
+        "I": 10,
+        "U": 20
+      }
+    },
+    "HARRISON": {
+      "code": "102",
+      "row_count": 252,
+      "race_tally": {
+        "W": 158,
+        "B": 92,
+        "A": 1,
+        "I": 1
+      }
+    },
+    "HARTLEY": {
+      "code": "103",
+      "row_count": 13,
+      "race_tally": {
+        "B": 1,
+        "W": 12
+      }
+    },
+    "HASKELL": {
+      "code": "104",
+      "row_count": 26,
+      "race_tally": {
+        "W": 22,
+        "B": 3,
+        "U": 1
+      }
+    },
+    "HAYS": {
+      "code": "105",
+      "row_count": 363,
+      "race_tally": {
+        "W": 334,
+        "B": 29
+      }
+    },
+    "HEMPHILL": {
+      "code": "106",
+      "row_count": 7,
+      "race_tally": {
+        "W": 7
+      }
+    },
+    "HENDERSON": {
+      "code": "107",
+      "row_count": 423,
+      "race_tally": {
+        "W": 379,
+        "B": 44
+      }
+    },
+    "HIDALGO": {
+      "code": "108",
+      "row_count": 2058,
+      "race_tally": {
+        "W": 2013,
+        "B": 41,
+        "U": 1,
+        "A": 3
+      }
+    },
+    "HILL": {
+      "code": "109",
+      "row_count": 289,
+      "race_tally": {
+        "W": 248,
+        "B": 39,
+        "A": 2
+      }
+    },
+    "HOCKLEY": {
+      "code": "110",
+      "row_count": 80,
+      "race_tally": {
+        "W": 71,
+        "B": 9
+      }
+    },
+    "HOOD": {
+      "code": "111",
+      "row_count": 220,
+      "race_tally": {
+        "W": 206,
+        "B": 12,
+        "I": 2
+      }
+    },
+    "HOPKINS": {
+      "code": "112",
+      "row_count": 161,
+      "race_tally": {
+        "B": 30,
+        "W": 131
+      }
+    },
+    "HOUSTON": {
+      "code": "113",
+      "row_count": 127,
+      "race_tally": {
+        "W": 85,
+        "B": 42
+      }
+    },
+    "HOWARD": {
+      "code": "114",
+      "row_count": 161,
+      "race_tally": {
+        "W": 147,
+        "B": 13,
+        "A": 1
+      }
+    },
+    "HUDSPETH": {
+      "code": "115",
+      "row_count": 19,
+      "race_tally": {
+        "W": 19
+      }
+    },
+    "HUNT": {
+      "code": "116",
+      "row_count": 388,
+      "race_tally": {
+        "W": 338,
+        "B": 49,
+        "I": 1
+      }
+    },
+    "HUTCHINSON": {
+      "code": "117",
+      "row_count": 68,
+      "race_tally": {
+        "W": 65,
+        "B": 3
+      }
+    },
+    "IRION": {
+      "code": "118",
+      "row_count": 6,
+      "race_tally": {
+        "W": 6
+      }
+    },
+    "JACK": {
+      "code": "119",
+      "row_count": 35,
+      "race_tally": {
+        "W": 32,
+        "U": 1,
+        "I": 1,
+        "B": 1
+      }
+    },
+    "JACKSON": {
+      "code": "120",
+      "row_count": 97,
+      "race_tally": {
+        "W": 84,
+        "B": 13
+      }
+    },
+    "JASPER": {
+      "code": "121",
+      "row_count": 176,
+      "race_tally": {
+        "W": 136,
+        "B": 39,
+        "U": 1
+      }
+    },
+    "JEFF DAVIS": {
+      "code": "122",
+      "row_count": 9,
+      "race_tally": {
+        "W": 9
+      }
+    },
+    "JEFFERSON": {
+      "code": "123",
+      "row_count": 1150,
+      "race_tally": {
+        "W": 625,
+        "B": 512,
+        "A": 7,
+        "U": 2,
+        "I": 4
+      }
+    },
+    "JIM HOGG": {
+      "code": "124",
+      "row_count": 18,
+      "race_tally": {
+        "W": 18
+      }
+    },
+    "JIM WELLS": {
+      "code": "125",
+      "row_count": 147,
+      "race_tally": {
+        "W": 145,
+        "B": 2
+      }
+    },
+    "JOHNSON": {
+      "code": "126",
+      "row_count": 751,
+      "race_tally": {
+        "W": 690,
+        "B": 57,
+        "A": 4
+      }
+    },
+    "JONES": {
+      "code": "127",
+      "row_count": 130,
+      "race_tally": {
+        "W": 113,
+        "B": 16,
+        "U": 1
+      }
+    },
+    "KARNES": {
+      "code": "128",
+      "row_count": 96,
+      "race_tally": {
+        "W": 83,
+        "B": 13
+      }
+    },
+    "KAUFMAN": {
+      "code": "129",
+      "row_count": 365,
+      "race_tally": {
+        "W": 255,
+        "B": 109,
+        "A": 1
+      }
+    },
+    "KENDALL": {
+      "code": "130",
+      "row_count": 30,
+      "race_tally": {
+        "W": 30
+      }
+    },
+    "KENEDY": {
+      "code": "131",
+      "row_count": 8,
+      "race_tally": {
+        "W": 8
+      }
+    },
+    "KENT": {
+      "code": "132",
+      "row_count": 1,
+      "race_tally": {
+        "W": 1
+      }
+    },
+    "KERR": {
+      "code": "133",
+      "row_count": 156,
+      "race_tally": {
+        "W": 148,
+        "B": 7,
+        "A": 1
+      }
+    },
+    "KIMBLE": {
+      "code": "134",
+      "row_count": 22,
+      "race_tally": {
+        "W": 22
+      }
+    },
+    "KING": {
+      "code": "135",
+      "row_count": 0,
+      "race_tally": {}
+    },
+    "KINNEY": {
+      "code": "136",
+      "row_count": 6,
+      "race_tally": {
+        "W": 5,
+        "B": 1
+      }
+    },
+    "KLEBERG": {
+      "code": "137",
+      "row_count": 106,
+      "race_tally": {
+        "W": 99,
+        "A": 1,
+        "B": 5,
+        "I": 1
+      }
+    },
+    "KNOX": {
+      "code": "138",
+      "row_count": 25,
+      "race_tally": {
+        "W": 23,
+        "B": 2
+      }
+    },
+    "LA SALLE": {
+      "code": "142",
+      "row_count": 35,
+      "race_tally": {
+        "W": 33,
+        "B": 2
+      }
+    },
+    "LAMAR": {
+      "code": "139",
+      "row_count": 242,
+      "race_tally": {
+        "W": 195,
+        "B": 47
+      }
+    },
+    "LAMB": {
+      "code": "140",
+      "row_count": 574,
+      "race_tally": {
+        "W": 446,
+        "B": 128
+      }
+    },
+    "LAMPASAS": {
+      "code": "141",
+      "row_count": 99,
+      "race_tally": {
+        "W": 91,
+        "B": 7,
+        "A": 1
+      }
+    },
+    "LAVACA": {
+      "code": "143",
+      "row_count": 59,
+      "race_tally": {
+        "W": 52,
+        "B": 7
+      }
+    },
+    "LEE": {
+      "code": "144",
+      "row_count": 53,
+      "race_tally": {
+        "W": 39,
+        "B": 14
+      }
+    },
+    "LEON": {
+      "code": "145",
+      "row_count": 64,
+      "race_tally": {
+        "W": 50,
+        "B": 13,
+        "A": 1
+      }
+    },
+    "LIBERTY": {
+      "code": "146",
+      "row_count": 434,
+      "race_tally": {
+        "W": 366,
+        "B": 66,
+        "I": 1,
+        "U": 1
+      }
+    },
+    "LIMESTONE": {
+      "code": "147",
+      "row_count": 152,
+      "race_tally": {
+        "W": 103,
+        "B": 48,
+        "A": 1
+      }
+    },
+    "LIPSCOMB": {
+      "code": "148",
+      "row_count": 4,
+      "race_tally": {
+        "W": 4
+      }
+    },
+    "LIVE OAK": {
+      "code": "149",
+      "row_count": 56,
+      "race_tally": {
+        "W": 55,
+        "I": 1
+      }
+    },
+    "LLANO": {
+      "code": "150",
+      "row_count": 88,
+      "race_tally": {
+        "W": 84,
+        "B": 4
+      }
+    },
+    "LOVING": {
+      "code": "151",
+      "row_count": 3,
+      "race_tally": {
+        "W": 3
+      }
+    },
+    "LUBBOCK": {
+      "code": "152",
+      "row_count": 788,
+      "race_tally": {
+        "W": 658,
+        "B": 123,
+        "A": 3,
+        "U": 3,
+        "I": 1
+      }
+    },
+    "LYNN": {
+      "code": "153",
+      "row_count": 27,
+      "race_tally": {
+        "W": 26,
+        "A": 1
+      }
+    },
+    "MADISON": {
+      "code": "157",
+      "row_count": 64,
+      "race_tally": {
+        "W": 38,
+        "B": 25,
+        "I": 1
+      }
+    },
+    "MARION": {
+      "code": "158",
+      "row_count": 57,
+      "race_tally": {
+        "B": 16,
+        "W": 41
+      }
+    },
+    "MARTIN": {
+      "code": "159",
+      "row_count": 34,
+      "race_tally": {
+        "W": 32,
+        "B": 2
+      }
+    },
+    "MASON": {
+      "code": "160",
+      "row_count": 7,
+      "race_tally": {
+        "W": 6,
+        "U": 1
+      }
+    },
+    "MATAGORDA": {
+      "code": "161",
+      "row_count": 105,
+      "race_tally": {
+        "W": 88,
+        "B": 17
+      }
+    },
+    "MAVERICK": {
+      "code": "162",
+      "row_count": 66,
+      "race_tally": {
+        "W": 64,
+        "I": 2
+      }
+    },
+    "MCCULLOCH": {
+      "code": "154",
+      "row_count": 39,
+      "race_tally": {
+        "W": 38,
+        "B": 1
+      }
+    },
+    "MCLENNAN": {
+      "code": "155",
+      "row_count": 918,
+      "race_tally": {
+        "W": 666,
+        "B": 247,
+        "U": 2,
+        "I": 1,
+        "A": 2
+      }
+    },
+    "MCMULLEN": {
+      "code": "156",
+      "row_count": 3,
+      "race_tally": {
+        "W": 3
+      }
+    },
+    "MEDINA": {
+      "code": "163",
+      "row_count": 161,
+      "race_tally": {
+        "W": 158,
+        "B": 3
+      }
+    },
+    "MENARD": {
+      "code": "164",
+      "row_count": 11,
+      "race_tally": {
+        "W": 10,
+        "B": 1
+      }
+    },
+    "MIDLAND": {
+      "code": "165",
+      "row_count": 631,
+      "race_tally": {
+        "B": 102,
+        "W": 517,
+        "A": 6,
+        "U": 5,
+        "I": 1
+      }
+    },
+    "MILAM": {
+      "code": "166",
+      "row_count": 150,
+      "race_tally": {
+        "B": 26,
+        "W": 122,
+        "A": 2
+      }
+    },
+    "MILLS": {
+      "code": "167",
+      "row_count": 22,
+      "race_tally": {
+        "W": 22
+      }
+    },
+    "MITCHELL": {
+      "code": "168",
+      "row_count": 53,
+      "race_tally": {
+        "W": 47,
+        "B": 6
+      }
+    },
+    "MONTAGUE": {
+      "code": "169",
+      "row_count": 94,
+      "race_tally": {
+        "W": 92,
+        "B": 1,
+        "A": 1
+      }
+    },
+    "MONTGOMERY": {
+      "code": "170",
+      "row_count": 1091,
+      "race_tally": {
+        "W": 967,
+        "I": 2,
+        "A": 10,
+        "B": 111,
+        "U": 1
+      }
+    },
+    "MOORE": {
+      "code": "171",
+      "row_count": 43,
+      "race_tally": {
+        "W": 35,
+        "B": 6,
+        "A": 2
+      }
+    },
+    "MORRIS": {
+      "code": "172",
+      "row_count": 71,
+      "race_tally": {
+        "W": 48,
+        "B": 23
+      }
+    },
+    "MOTLEY": {
+      "code": "173",
+      "row_count": 3,
+      "race_tally": {
+        "W": 3
+      }
+    },
+    "NACOGDOCHES": {
+      "code": "174",
+      "row_count": 218,
+      "race_tally": {
+        "W": 157,
+        "B": 61
+      }
+    },
+    "NAVARRO": {
+      "code": "175",
+      "row_count": 242,
+      "race_tally": {
+        "B": 67,
+        "W": 174,
+        "I": 1
+      }
+    },
+    "NEWTON": {
+      "code": "176",
+      "row_count": 59,
+      "race_tally": {
+        "B": 13,
+        "W": 46
+      }
+    },
+    "NOLAN": {
+      "code": "177",
+      "row_count": 71,
+      "race_tally": {
+        "W": 68,
+        "B": 3
+      }
+    },
+    "NUECES": {
+      "code": "178",
+      "row_count": 1406,
+      "race_tally": {
+        "W": 1291,
+        "B": 110,
+        "A": 1,
+        "U": 3,
+        "I": 1
+      }
+    },
+    "OCHILTREE": {
+      "code": "179",
+      "row_count": 17,
+      "race_tally": {
+        "W": 17
+      }
+    },
+    "OLDHAM": {
+      "code": "180",
+      "row_count": 2,
+      "race_tally": {
+        "W": 2
+      }
+    },
+    "ORANGE": {
+      "code": "181",
+      "row_count": 347,
+      "race_tally": {
+        "W": 298,
+        "B": 49
+      }
+    },
+    "PALO PINTO": {
+      "code": "182",
+      "row_count": 125,
+      "race_tally": {
+        "W": 117,
+        "B": 8
+      }
+    },
+    "PANOLA": {
+      "code": "183",
+      "row_count": 79,
+      "race_tally": {
+        "W": 55,
+        "B": 23,
+        "I": 1
+      }
+    },
+    "PARKER": {
+      "code": "184",
+      "row_count": 516,
+      "race_tally": {
+        "W": 504,
+        "B": 11,
+        "A": 1
+      }
+    },
+    "PARMER": {
+      "code": "185",
+      "row_count": 20,
+      "race_tally": {
+        "W": 20
+      }
+    },
+    "PECOS": {
+      "code": "186",
+      "row_count": 105,
+      "race_tally": {
+        "W": 98,
+        "B": 6,
+        "A": 1
+      }
+    },
+    "POLK": {
+      "code": "187",
+      "row_count": 316,
+      "race_tally": {
+        "W": 266,
+        "B": 46,
+        "I": 1,
+        "A": 3
+      }
+    },
+    "POTTER": {
+      "code": "188",
+      "row_count": 654,
+      "race_tally": {
+        "W": 543,
+        "B": 100,
+        "A": 9,
+        "U": 1,
+        "I": 1
+      }
+    },
+    "PRESIDIO": {
+      "code": "189",
+      "row_count": 8,
+      "race_tally": {
+        "W": 8
+      }
+    },
+    "RAINS": {
+      "code": "190",
+      "row_count": 55,
+      "race_tally": {
+        "W": 52,
+        "B": 3
+      }
+    },
+    "RANDALL": {
+      "code": "191",
+      "row_count": 357,
+      "race_tally": {
+        "W": 334,
+        "B": 19,
+        "A": 3,
+        "U": 1
+      }
+    },
+    "REAGAN": {
+      "code": "192",
+      "row_count": 20,
+      "race_tally": {
+        "W": 19,
+        "B": 1
+      }
+    },
+    "REAL": {
+      "code": "193",
+      "row_count": 29,
+      "race_tally": {
+        "W": 29
+      }
+    },
+    "RED RIVER": {
+      "code": "194",
+      "row_count": 89,
+      "race_tally": {
+        "B": 29,
+        "W": 60
+      }
+    },
+    "REEVES": {
+      "code": "195",
+      "row_count": 56,
+      "race_tally": {
+        "W": 55,
+        "B": 1
+      }
+    },
+    "REFUGIO": {
+      "code": "196",
+      "row_count": 35,
+      "race_tally": {
+        "W": 30,
+        "B": 5
+      }
+    },
+    "ROBERTS": {
+      "code": "197",
+      "row_count": 0,
+      "race_tally": {}
+    },
+    "ROBERTSON": {
+      "code": "198",
+      "row_count": 88,
+      "race_tally": {
+        "B": 33,
+        "W": 55
+      }
+    },
+    "ROCKWALL": {
+      "code": "199",
+      "row_count": 72,
+      "race_tally": {
+        "W": 55,
+        "B": 15,
+        "A": 2
+      }
+    },
+    "RUNNELS": {
+      "code": "200",
+      "row_count": 86,
+      "race_tally": {
+        "W": 83,
+        "B": 3
+      }
+    },
+    "RUSK": {
+      "code": "201",
+      "row_count": 258,
+      "race_tally": {
+        "W": 185,
+        "B": 72,
+        "I": 1
+      }
+    },
+    "SABINE": {
+      "code": "202",
+      "row_count": 50,
+      "race_tally": {
+        "W": 49,
+        "B": 1
+      }
+    },
+    "SAN AUGUSTINE": {
+      "code": "203",
+      "row_count": 39,
+      "race_tally": {
+        "W": 27,
+        "B": 12
+      }
+    },
+    "SAN JACINTO": {
+      "code": "204",
+      "row_count": 179,
+      "race_tally": {
+        "W": 159,
+        "B": 16,
+        "I": 2,
+        "A": 1,
+        "U": 1
+      }
+    },
+    "SAN PATRICIO": {
+      "code": "205",
+      "row_count": 219,
+      "race_tally": {
+        "W": 213,
+        "B": 6
+      }
+    },
+    "SAN SABA": {
+      "code": "206",
+      "row_count": 20,
+      "race_tally": {
+        "W": 14,
+        "B": 5,
+        "A": 1
+      }
+    },
+    "SCHLEICHER": {
+      "code": "207",
+      "row_count": 18,
+      "race_tally": {
+        "W": 18
+      }
+    },
+    "SCURRY": {
+      "code": "208",
+      "row_count": 81,
+      "race_tally": {
+        "W": 76,
+        "B": 5
+      }
+    },
+    "SHACKELFORD": {
+      "code": "209",
+      "row_count": 15,
+      "race_tally": {
+        "W": 14,
+        "B": 1
+      }
+    },
+    "SHELBY": {
+      "code": "210",
+      "row_count": 96,
+      "race_tally": {
+        "W": 74,
+        "B": 22
+      }
+    },
+    "SHERMAN": {
+      "code": "211",
+      "row_count": 3,
+      "race_tally": {
+        "W": 3
+      }
+    },
+    "SMITH": {
+      "code": "212",
+      "row_count": 727,
+      "race_tally": {
+        "W": 499,
+        "B": 227,
+        "I": 1
+      }
+    },
+    "SOMERVELL": {
+      "code": "213",
+      "row_count": 31,
+      "race_tally": {
+        "W": 29,
+        "B": 2
+      }
+    },
+    "STARR": {
+      "code": "214",
+      "row_count": 95,
+      "race_tally": {
+        "W": 95
+      }
+    },
+    "STEPHENS": {
+      "code": "215",
+      "row_count": 32,
+      "race_tally": {
+        "W": 32
+      }
+    },
+    "STERLING": {
+      "code": "216",
+      "row_count": 2,
+      "race_tally": {
+        "W": 2
+      }
+    },
+    "STONEWALL": {
+      "code": "217",
+      "row_count": 6,
+      "race_tally": {
+        "W": 5,
+        "B": 1
+      }
+    },
+    "SUTTON": {
+      "code": "218",
+      "row_count": 19,
+      "race_tally": {
+        "W": 19
+      }
+    },
+    "SWISHER": {
+      "code": "219",
+      "row_count": 46,
+      "race_tally": {
+        "W": 39,
+        "B": 7
+      }
+    },
+    "TARRANT": {
+      "code": "220",
+      "row_count": 5232,
+      "race_tally": {
+        "W": 3599,
+        "B": 1562,
+        "I": 7,
+        "U": 3,
+        "A": 61
+      }
+    },
+    "TAYLOR": {
+      "code": "221",
+      "row_count": 684,
+      "race_tally": {
+        "W": 569,
+        "B": 108,
+        "A": 2,
+        "I": 2,
+        "U": 3
+      }
+    },
+    "TERRELL": {
+      "code": "222",
+      "row_count": 2,
+      "race_tally": {
+        "W": 2
+      }
+    },
+    "TERRY": {
+      "code": "223",
+      "row_count": 74,
+      "race_tally": {
+        "W": 65,
+        "B": 9
+      }
+    },
+    "THROCKMORTON": {
+      "code": "224",
+      "row_count": 4,
+      "race_tally": {
+        "W": 4
+      }
+    },
+    "TITUS": {
+      "code": "225",
+      "row_count": 100,
+      "race_tally": {
+        "B": 33,
+        "W": 67
+      }
+    },
+    "TOM GREEN": {
+      "code": "226",
+      "row_count": 516,
+      "race_tally": {
+        "W": 484,
+        "U": 1,
+        "B": 29,
+        "A": 2
+      }
+    },
+    "TRAVIS": {
+      "code": "227",
+      "row_count": 1857,
+      "race_tally": {
+        "W": 1385,
+        "B": 454,
+        "I": 4,
+        "A": 14
+      }
+    },
+    "TRINITY": {
+      "code": "228",
+      "row_count": 85,
+      "race_tally": {
+        "W": 70,
+        "B": 15
+      }
+    },
+    "TYLER": {
+      "code": "229",
+      "row_count": 140,
+      "race_tally": {
+        "W": 124,
+        "B": 16
+      }
+    },
+    "UNKNOWN": {
+      "code": "000",
+      "row_count": 6623,
+      "race_tally": {
+        "W": 5413,
+        "B": 1137,
+        "U": 22,
+        "I": 12,
+        "A": 39
+      }
+    },
+    "UPSHUR": {
+      "code": "230",
+      "row_count": 184,
+      "race_tally": {
+        "W": 164,
+        "B": 19,
+        "A": 1
+      }
+    },
+    "UPTON": {
+      "code": "231",
+      "row_count": 22,
+      "race_tally": {
+        "W": 22
+      }
+    },
+    "UVALDE": {
+      "code": "232",
+      "row_count": 100,
+      "race_tally": {
+        "W": 98,
+        "B": 1,
+        "A": 1
+      }
+    },
+    "VAL VERDE": {
+      "code": "233",
+      "row_count": 153,
+      "race_tally": {
+        "W": 147,
+        "B": 4,
+        "A": 2
+      }
+    },
+    "VAN ZANDT": {
+      "code": "234",
+      "row_count": 222,
+      "race_tally": {
+        "W": 203,
+        "B": 19
+      }
+    },
+    "VICTORIA": {
+      "code": "235",
+      "row_count": 291,
+      "race_tally": {
+        "W": 259,
+        "B": 30,
+        "U": 1,
+        "A": 1
+      }
+    },
+    "WALKER": {
+      "code": "236",
+      "row_count": 601,
+      "race_tally": {
+        "W": 432,
+        "B": 163,
+        "A": 2,
+        "U": 1,
+        "I": 3
+      }
+    },
+    "WALLER": {
+      "code": "237",
+      "row_count": 156,
+      "race_tally": {
+        "W": 109,
+        "B": 46,
+        "A": 1
+      }
+    },
+    "WARD": {
+      "code": "238",
+      "row_count": 60,
+      "race_tally": {
+        "B": 3,
+        "W": 57
+      }
+    },
+    "WASHINGTON": {
+      "code": "239",
+      "row_count": 92,
+      "race_tally": {
+        "W": 50,
+        "B": 42
+      }
+    },
+    "WEBB": {
+      "code": "240",
+      "row_count": 304,
+      "race_tally": {
+        "W": 300,
+        "B": 4
+      }
+    },
+    "WHARTON": {
+      "code": "241",
+      "row_count": 168,
+      "race_tally": {
+        "W": 114,
+        "B": 54
+      }
+    },
+    "WHEELER": {
+      "code": "242",
+      "row_count": 25,
+      "race_tally": {
+        "W": 20,
+        "B": 5
+      }
+    },
+    "WICHITA": {
+      "code": "243",
+      "row_count": 367,
+      "race_tally": {
+        "W": 305,
+        "B": 60,
+        "U": 1,
+        "A": 1
+      }
+    },
+    "WILBARGER": {
+      "code": "244",
+      "row_count": 57,
+      "race_tally": {
+        "W": 45,
+        "B": 10,
+        "A": 1,
+        "U": 1
+      }
+    },
+    "WILLACY": {
+      "code": "245",
+      "row_count": 91,
+      "race_tally": {
+        "W": 85,
+        "I": 1,
+        "B": 5
+      }
+    },
+    "WILLIAMSON": {
+      "code": "246",
+      "row_count": 595,
+      "race_tally": {
+        "W": 499,
+        "B": 87,
+        "A": 8,
+        "U": 1
+      }
+    },
+    "WILSON": {
+      "code": "247",
+      "row_count": 139,
+      "race_tally": {
+        "W": 130,
+        "B": 8,
+        "I": 1
+      }
+    },
+    "WINKLER": {
+      "code": "248",
+      "row_count": 47,
+      "race_tally": {
+        "W": 44,
+        "B": 2,
+        "U": 1
+      }
+    },
+    "WISE": {
+      "code": "249",
+      "row_count": 255,
+      "race_tally": {
+        "W": 246,
+        "B": 8,
+        "A": 1
+      }
+    },
+    "WOOD": {
+      "code": "250",
+      "row_count": 232,
+      "race_tally": {
+        "W": 212,
+        "B": 19,
+        "A": 1
+      }
+    },
+    "YOAKUM": {
+      "code": "251",
+      "row_count": 16,
+      "race_tally": {
+        "W": 14,
+        "B": 2
+      }
+    },
+    "YOUNG": {
+      "code": "252",
+      "row_count": 68,
+      "race_tally": {
+        "W": 65,
+        "B": 3
+      }
+    },
+    "ZAPATA": {
+      "code": "253",
+      "row_count": 15,
+      "race_tally": {
+        "W": 15
+      }
+    },
+    "ZAVALA": {
+      "code": "254",
+      "row_count": 49,
+      "race_tally": {
+        "W": 49
+      }
+    }
+  }
+}

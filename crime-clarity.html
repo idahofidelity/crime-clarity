@@ -736,9 +736,9 @@
       "never tracked at all." Sex offender registries are public safety lookup tools, not built for aggregate
       reporting the way UCR crime data is. We read only the public Race field from each registrant record to build a
       statistical tally — no names, addresses, photos, or other identifying details were stored anywhere in this
-      process. Idaho's registry has no Ethnicity field whatsoever, so unlike arrest data, there's no way to even
-      partially recover how many "White" registrants are Hispanic or MENA — that population is simply invisible here,
-      with no hidden field left to check.</p>
+      process. None of the three registries checked so far have an Ethnicity field whatsoever, so unlike arrest data,
+      there's no way to even partially recover how many "White" registrants are Hispanic or MENA — that population is
+      simply invisible here, with no hidden field left to check.</p>
     <div class="county-table-wrap">
       <table class="county-table" id="registryTable">
         <thead>
@@ -923,7 +923,8 @@ async function loadScorecard() {
 async function loadRegistryData() {
   const files = [
     { state: 'Idaho', file: 'data/idaho_sor_race_tally.json' },
-    { state: 'Illinois', file: 'data/illinois_sor_race_tally.json' }
+    { state: 'Illinois', file: 'data/illinois_sor_race_tally.json' },
+    { state: 'Texas', file: 'data/texas_sor_race_tally.json' }
   ];
   const tbody = document.getElementById('registryTableBody');
 
