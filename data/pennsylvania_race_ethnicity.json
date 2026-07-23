@@ -3,54 +3,54 @@
   "domain": "www.ucr.pa.gov",
   "pulled_at": "2026-07-22",
   "date_range": {
-    "start": "01/01/2026",
-    "end": "07/22/2026"
+    "start": "01/01/2024",
+    "end": "12/31/2024"
   },
   "source": "Pennsylvania NIBRS Repository (www.ucr.pa.gov)",
   "methodology": "FBI NIBRS Data Element 49 (Race of Arrestee) x Data Element 50 (Ethnicity of Arrestee)",
   "classification": "hides_it",
   "statewide": {
     "White": {
-      "total": 44836,
-      "hispanic": 7972,
-      "not_hispanic": 35664,
-      "unknown": 888,
-      "not_reported": 312
+      "total": 93959,
+      "hispanic": 14900,
+      "not_hispanic": 75884,
+      "unknown": 2341,
+      "not_reported": 834
     },
     "Black or African American": {
-      "total": 24657,
-      "hispanic": 893,
-      "not_hispanic": 21736,
-      "unknown": 1852,
-      "not_reported": 176
+      "total": 48502,
+      "hispanic": 1717,
+      "not_hispanic": 41968,
+      "unknown": 4505,
+      "not_reported": 312
     },
     "American Indian or Alaska Native": {
-      "total": 81,
-      "hispanic": 6,
-      "not_hispanic": 71,
-      "unknown": 4,
-      "not_reported": 0
+      "total": 153,
+      "hispanic": 23,
+      "not_hispanic": 119,
+      "unknown": 8,
+      "not_reported": 3
     },
     "Asian": {
-      "total": 771,
-      "hispanic": 16,
-      "not_hispanic": 717,
-      "unknown": 28,
-      "not_reported": 10
+      "total": 1778,
+      "hispanic": 32,
+      "not_hispanic": 1656,
+      "unknown": 77,
+      "not_reported": 13
     },
     "Native Hawaiian or Other Pacific Islander": {
-      "total": 52,
-      "hispanic": 12,
-      "not_hispanic": 38,
-      "unknown": 2,
-      "not_reported": 0
+      "total": 94,
+      "hispanic": 21,
+      "not_hispanic": 59,
+      "unknown": 12,
+      "not_reported": 2
     },
     "Unknown": {
-      "total": 776,
-      "hispanic": 196,
-      "not_hispanic": 204,
-      "unknown": 371,
-      "not_reported": 5
+      "total": 1700,
+      "hispanic": 591,
+      "not_hispanic": 444,
+      "unknown": 642,
+      "not_reported": 23
     }
   },
   "counties": {},

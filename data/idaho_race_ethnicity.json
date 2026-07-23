@@ -3,163 +3,154 @@
   "domain": "nibrs.isp.idaho.gov",
   "pulled_at": "2026-07-22",
   "date_range": {
-    "start": "01/01/2026",
-    "end": "07/22/2026"
+    "start": "01/01/2024",
+    "end": "12/31/2024"
   },
   "source": "Idaho NIBRS Repository (nibrs.isp.idaho.gov)",
   "methodology": "FBI NIBRS Data Element 49 (Race of Arrestee) x Data Element 50 (Ethnicity of Arrestee)",
   "classification": "hides_it",
   "statewide": {
     "White": {
-      "total": 15014,
-      "hispanic": 2645,
-      "not_hispanic": 10169,
-      "unknown": 155,
-      "not_reported": 2045
+      "total": 42421,
+      "hispanic": 7073,
+      "not_hispanic": 27445,
+      "unknown": 682,
+      "not_reported": 7221
     },
     "Black or African American": {
-      "total": 584,
-      "hispanic": 10,
-      "not_hispanic": 502,
-      "unknown": 4,
-      "not_reported": 68
+      "total": 1573,
+      "hispanic": 5,
+      "not_hispanic": 1282,
+      "unknown": 35,
+      "not_reported": 251
     },
     "American Indian or Alaska Native": {
-      "total": 460,
-      "hispanic": 18,
-      "not_hispanic": 341,
-      "unknown": 7,
-      "not_reported": 94
+      "total": 1375,
+      "hispanic": 26,
+      "not_hispanic": 1065,
+      "unknown": 15,
+      "not_reported": 269
     },
     "Asian": {
-      "total": 268,
-      "hispanic": 11,
-      "not_hispanic": 222,
-      "unknown": 12,
-      "not_reported": 23
+      "total": 644,
+      "hispanic": 56,
+      "not_hispanic": 465,
+      "unknown": 36,
+      "not_reported": 87
     },
     "Unknown": {
-      "total": 511,
-      "hispanic": 50,
-      "not_hispanic": 56,
-      "unknown": 174,
-      "not_reported": 231
+      "total": 1355,
+      "hispanic": 141,
+      "not_hispanic": 144,
+      "unknown": 488,
+      "not_reported": 582
     }
   },
   "counties": {
     "Ada": {
       "White": {
-        "total": 3519,
-        "hispanic": 631,
-        "not_hispanic": 2882,
-        "unknown": 4,
-        "not_reported": 2
+        "total": 8959,
+        "hispanic": 1535,
+        "not_hispanic": 7321,
+        "unknown": 11,
+        "not_reported": 92
       },
       "Black or African American": {
-        "total": 252,
+        "total": 638,
         "hispanic": 1,
-        "not_hispanic": 251,
+        "not_hispanic": 635,
         "unknown": 0,
-        "not_reported": 0
+        "not_reported": 2
       },
       "American Indian or Alaska Native": {
-        "total": 33,
-        "hispanic": 1,
-        "not_hispanic": 32,
+        "total": 68,
+        "hispanic": 3,
+        "not_hispanic": 65,
         "unknown": 0,
         "not_reported": 0
       },
       "Asian": {
-        "total": 74,
-        "hispanic": 1,
-        "not_hispanic": 73,
-        "unknown": 0,
+        "total": 122,
+        "hispanic": 3,
+        "not_hispanic": 118,
+        "unknown": 1,
         "not_reported": 0
       },
       "Unknown": {
-        "total": 72,
-        "hispanic": 0,
-        "not_hispanic": 3,
-        "unknown": 69,
+        "total": 196,
+        "hispanic": 2,
+        "not_hispanic": 5,
+        "unknown": 189,
         "not_reported": 0
       }
     },
     "Adams": {
       "White": {
-        "total": 20,
-        "hispanic": 1,
-        "not_hispanic": 14,
+        "total": 62,
+        "hispanic": 3,
+        "not_hispanic": 54,
         "unknown": 3,
         "not_reported": 2
       },
       "Black or African American": {
-        "total": 2,
+        "total": 1,
         "hispanic": 0,
-        "not_hispanic": 2,
-        "unknown": 0,
+        "not_hispanic": 0,
+        "unknown": 1,
         "not_reported": 0
       },
       "Unknown": {
-        "total": 34,
-        "hispanic": 1,
-        "not_hispanic": 7,
-        "unknown": 9,
-        "not_reported": 17
+        "total": 14,
+        "hispanic": 2,
+        "not_hispanic": 5,
+        "unknown": 2,
+        "not_reported": 5
       }
     },
     "Bannock": {
       "White": {
-        "total": 1074,
-        "hispanic": 147,
-        "not_hispanic": 695,
+        "total": 3187,
+        "hispanic": 454,
+        "not_hispanic": 1926,
         "unknown": 0,
-        "not_reported": 232
+        "not_reported": 807
       },
       "Black or African American": {
-        "total": 46,
+        "total": 131,
         "hispanic": 2,
-        "not_hispanic": 33,
+        "not_hispanic": 91,
         "unknown": 0,
-        "not_reported": 11
+        "not_reported": 38
       },
       "American Indian or Alaska Native": {
-        "total": 198,
-        "hispanic": 8,
-        "not_hispanic": 163,
+        "total": 660,
+        "hispanic": 5,
+        "not_hispanic": 548,
         "unknown": 0,
-        "not_reported": 27
+        "not_reported": 107
       },
       "Asian": {
-        "total": 12,
+        "total": 45,
         "hispanic": 0,
-        "not_hispanic": 8,
+        "not_hispanic": 27,
         "unknown": 0,
-        "not_reported": 4
+        "not_reported": 18
       },
       "Unknown": {
-        "total": 7,
-        "hispanic": 0,
-        "not_hispanic": 3,
+        "total": 51,
+        "hispanic": 2,
+        "not_hispanic": 8,
         "unknown": 0,
-        "not_reported": 4
+        "not_reported": 41
       }
     },
     "Bear Lake": {
       "White": {
-        "total": 9,
+        "total": 50,
         "hispanic": 0,
-        "not_hispanic": 3,
+        "not_hispanic": 18,
         "unknown": 0,
-        "not_reported": 6
-      }
-    },
-    "Benewah": {
-      "White": {
-        "total": 25,
-        "hispanic": 0,
-        "not_hispanic": 25,
-        "unknown": 0,
-        "not_reported": 0
+        "not_reported": 32
       },
       "American Indian or Alaska Native": {
         "total": 1,
@@ -168,60 +159,224 @@
         "unknown": 0,
         "not_reported": 0
       },
-      "Asian": {
-        "total": 1,
-        "hispanic": 1,
+      "Unknown": {
+        "total": 4,
+        "hispanic": 0,
         "not_hispanic": 0,
+        "unknown": 0,
+        "not_reported": 4
+      }
+    },
+    "Benewah": {
+      "White": {
+        "total": 245,
+        "hispanic": 0,
+        "not_hispanic": 245,
+        "unknown": 0,
+        "not_reported": 0
+      },
+      "Black or African American": {
+        "total": 7,
+        "hispanic": 0,
+        "not_hispanic": 7,
+        "unknown": 0,
+        "not_reported": 0
+      },
+      "American Indian or Alaska Native": {
+        "total": 12,
+        "hispanic": 0,
+        "not_hispanic": 12,
         "unknown": 0,
         "not_reported": 0
       }
     },
     "Bingham": {
       "White": {
-        "total": 618,
-        "hispanic": 158,
-        "not_hispanic": 399,
-        "unknown": 5,
-        "not_reported": 56
+        "total": 1485,
+        "hispanic": 362,
+        "not_hispanic": 911,
+        "unknown": 28,
+        "not_reported": 184
       },
       "Black or African American": {
-        "total": 10,
+        "total": 30,
         "hispanic": 0,
-        "not_hispanic": 10,
-        "unknown": 0,
-        "not_reported": 0
-      },
-      "American Indian or Alaska Native": {
-        "total": 9,
-        "hispanic": 1,
-        "not_hispanic": 5,
-        "unknown": 0,
+        "not_hispanic": 23,
+        "unknown": 4,
         "not_reported": 3
       },
+      "American Indian or Alaska Native": {
+        "total": 55,
+        "hispanic": 3,
+        "not_hispanic": 34,
+        "unknown": 5,
+        "not_reported": 13
+      },
       "Asian": {
-        "total": 111,
-        "hispanic": 5,
-        "not_hispanic": 91,
-        "unknown": 6,
-        "not_reported": 9
+        "total": 276,
+        "hispanic": 41,
+        "not_hispanic": 198,
+        "unknown": 16,
+        "not_reported": 21
       },
       "Unknown": {
-        "total": 8,
-        "hispanic": 2,
+        "total": 5,
+        "hispanic": 0,
         "not_hispanic": 2,
         "unknown": 0,
-        "not_reported": 4
+        "not_reported": 3
       }
     },
     "Blaine": {
       "White": {
-        "total": 138,
-        "hispanic": 59,
-        "not_hispanic": 73,
-        "unknown": 6,
+        "total": 577,
+        "hispanic": 229,
+        "not_hispanic": 317,
+        "unknown": 31,
         "not_reported": 0
       },
       "Black or African American": {
+        "total": 7,
+        "hispanic": 0,
+        "not_hispanic": 5,
+        "unknown": 2,
+        "not_reported": 0
+      },
+      "American Indian or Alaska Native": {
+        "total": 4,
+        "hispanic": 0,
+        "not_hispanic": 4,
+        "unknown": 0,
+        "not_reported": 0
+      },
+      "Asian": {
+        "total": 1,
+        "hispanic": 0,
+        "not_hispanic": 0,
+        "unknown": 1,
+        "not_reported": 0
+      },
+      "Unknown": {
+        "total": 118,
+        "hispanic": 15,
+        "not_hispanic": 5,
+        "unknown": 98,
+        "not_reported": 0
+      }
+    },
+    "Boise": {
+      "White": {
+        "total": 156,
+        "hispanic": 0,
+        "not_hispanic": 13,
+        "unknown": 0,
+        "not_reported": 143
+      },
+      "Unknown": {
+        "total": 2,
+        "hispanic": 0,
+        "not_hispanic": 0,
+        "unknown": 0,
+        "not_reported": 2
+      }
+    },
+    "Bonner": {
+      "White": {
+        "total": 1130,
+        "hispanic": 23,
+        "not_hispanic": 942,
+        "unknown": 0,
+        "not_reported": 165
+      },
+      "Black or African American": {
+        "total": 22,
+        "hispanic": 0,
+        "not_hispanic": 19,
+        "unknown": 0,
+        "not_reported": 3
+      },
+      "American Indian or Alaska Native": {
+        "total": 16,
+        "hispanic": 0,
+        "not_hispanic": 15,
+        "unknown": 0,
+        "not_reported": 1
+      },
+      "Asian": {
+        "total": 12,
+        "hispanic": 0,
+        "not_hispanic": 8,
+        "unknown": 0,
+        "not_reported": 4
+      },
+      "Unknown": {
+        "total": 38,
+        "hispanic": 1,
+        "not_hispanic": 15,
+        "unknown": 0,
+        "not_reported": 22
+      }
+    },
+    "Bonneville": {
+      "White": {
+        "total": 3165,
+        "hispanic": 609,
+        "not_hispanic": 2369,
+        "unknown": 99,
+        "not_reported": 88
+      },
+      "Black or African American": {
+        "total": 87,
+        "hispanic": 1,
+        "not_hispanic": 77,
+        "unknown": 6,
+        "not_reported": 3
+      },
+      "American Indian or Alaska Native": {
+        "total": 71,
+        "hispanic": 6,
+        "not_hispanic": 57,
+        "unknown": 5,
+        "not_reported": 3
+      },
+      "Asian": {
+        "total": 23,
+        "hispanic": 2,
+        "not_hispanic": 18,
+        "unknown": 3,
+        "not_reported": 0
+      },
+      "Unknown": {
+        "total": 112,
+        "hispanic": 52,
+        "not_hispanic": 23,
+        "unknown": 35,
+        "not_reported": 2
+      }
+    },
+    "Boundary": {
+      "White": {
+        "total": 182,
+        "hispanic": 10,
+        "not_hispanic": 170,
+        "unknown": 2,
+        "not_reported": 0
+      },
+      "Black or African American": {
+        "total": 5,
+        "hispanic": 0,
+        "not_hispanic": 5,
+        "unknown": 0,
+        "not_reported": 0
+      },
+      "American Indian or Alaska Native": {
+        "total": 4,
+        "hispanic": 0,
+        "not_hispanic": 4,
+        "unknown": 0,
+        "not_reported": 0
+      },
+      "Asian": {
         "total": 3,
         "hispanic": 0,
         "not_hispanic": 3,
@@ -229,20 +384,74 @@
         "not_reported": 0
       },
       "Unknown": {
-        "total": 32,
-        "hispanic": 6,
+        "total": 3,
+        "hispanic": 0,
         "not_hispanic": 2,
-        "unknown": 24,
+        "unknown": 1,
         "not_reported": 0
       }
     },
-    "Boise": {
+    "Butte": {
       "White": {
-        "total": 49,
+        "total": 8,
+        "hispanic": 0,
+        "not_hispanic": 0,
+        "unknown": 0,
+        "not_reported": 8
+      }
+    },
+    "Camas": {},
+    "Canyon": {
+      "White": {
+        "total": 5377,
+        "hispanic": 1509,
+        "not_hispanic": 2244,
+        "unknown": 5,
+        "not_reported": 1619
+      },
+      "Black or African American": {
+        "total": 164,
+        "hispanic": 0,
+        "not_hispanic": 108,
+        "unknown": 0,
+        "not_reported": 56
+      },
+      "American Indian or Alaska Native": {
+        "total": 56,
+        "hispanic": 0,
+        "not_hispanic": 47,
+        "unknown": 0,
+        "not_reported": 9
+      },
+      "Asian": {
+        "total": 40,
+        "hispanic": 2,
+        "not_hispanic": 11,
+        "unknown": 12,
+        "not_reported": 15
+      },
+      "Unknown": {
+        "total": 45,
+        "hispanic": 5,
+        "not_hispanic": 1,
+        "unknown": 0,
+        "not_reported": 39
+      }
+    },
+    "Caribou": {
+      "White": {
+        "total": 108,
+        "hispanic": 7,
+        "not_hispanic": 60,
+        "unknown": 0,
+        "not_reported": 41
+      },
+      "Black or African American": {
+        "total": 3,
         "hispanic": 0,
         "not_hispanic": 2,
         "unknown": 0,
-        "not_reported": 47
+        "not_reported": 1
       },
       "American Indian or Alaska Native": {
         "total": 2,
@@ -254,41 +463,59 @@
       "Asian": {
         "total": 1,
         "hispanic": 0,
-        "not_hispanic": 0,
+        "not_hispanic": 1,
         "unknown": 0,
-        "not_reported": 1
+        "not_reported": 0
       },
       "Unknown": {
-        "total": 4,
-        "hispanic": 0,
-        "not_hispanic": 0,
+        "total": 15,
+        "hispanic": 5,
+        "not_hispanic": 1,
         "unknown": 0,
-        "not_reported": 4
+        "not_reported": 9
       }
     },
-    "Bonner": {
+    "Cassia": {
       "White": {
-        "total": 441,
-        "hispanic": 7,
-        "not_hispanic": 329,
-        "unknown": 0,
-        "not_reported": 105
+        "total": 133,
+        "hispanic": 43,
+        "not_hispanic": 89,
+        "unknown": 1,
+        "not_reported": 0
       },
       "Black or African American": {
-        "total": 6,
-        "hispanic": 3,
-        "not_hispanic": 3,
+        "total": 5,
+        "hispanic": 0,
+        "not_hispanic": 5,
         "unknown": 0,
         "not_reported": 0
       },
       "American Indian or Alaska Native": {
-        "total": 7,
+        "total": 1,
         "hispanic": 0,
-        "not_hispanic": 3,
+        "not_hispanic": 1,
         "unknown": 0,
-        "not_reported": 4
+        "not_reported": 0
+      }
+    },
+    "Clark": {
+      "White": {
+        "total": 13,
+        "hispanic": 0,
+        "not_hispanic": 13,
+        "unknown": 0,
+        "not_reported": 0
+      }
+    },
+    "Clearwater": {
+      "White": {
+        "total": 76,
+        "hispanic": 1,
+        "not_hispanic": 70,
+        "unknown": 0,
+        "not_reported": 5
       },
-      "Asian": {
+      "American Indian or Alaska Native": {
         "total": 1,
         "hispanic": 0,
         "not_hispanic": 1,
@@ -296,55 +523,161 @@
         "not_reported": 0
       },
       "Unknown": {
-        "total": 17,
+        "total": 8,
+        "hispanic": 1,
+        "not_hispanic": 2,
+        "unknown": 4,
+        "not_reported": 1
+      }
+    },
+    "Custer": {
+      "White": {
+        "total": 66,
+        "hispanic": 5,
+        "not_hispanic": 61,
+        "unknown": 0,
+        "not_reported": 0
+      },
+      "Black or African American": {
+        "total": 1,
         "hispanic": 0,
+        "not_hispanic": 1,
+        "unknown": 0,
+        "not_reported": 0
+      }
+    },
+    "Elmore": {
+      "White": {
+        "total": 527,
+        "hispanic": 53,
+        "not_hispanic": 160,
+        "unknown": 314,
+        "not_reported": 0
+      },
+      "Black or African American": {
+        "total": 11,
+        "hispanic": 0,
+        "not_hispanic": 4,
+        "unknown": 7,
+        "not_reported": 0
+      },
+      "American Indian or Alaska Native": {
+        "total": 1,
+        "hispanic": 0,
+        "not_hispanic": 1,
+        "unknown": 0,
+        "not_reported": 0
+      },
+      "Unknown": {
+        "total": 3,
+        "hispanic": 0,
+        "not_hispanic": 1,
+        "unknown": 2,
+        "not_reported": 0
+      }
+    },
+    "Franklin": {
+      "White": {
+        "total": 105,
+        "hispanic": 7,
+        "not_hispanic": 0,
+        "unknown": 0,
+        "not_reported": 98
+      },
+      "Black or African American": {
+        "total": 1,
+        "hispanic": 0,
+        "not_hispanic": 0,
+        "unknown": 0,
+        "not_reported": 1
+      },
+      "American Indian or Alaska Native": {
+        "total": 2,
+        "hispanic": 0,
+        "not_hispanic": 0,
+        "unknown": 0,
+        "not_reported": 2
+      },
+      "Unknown": {
+        "total": 5,
+        "hispanic": 0,
+        "not_hispanic": 0,
+        "unknown": 0,
+        "not_reported": 5
+      }
+    },
+    "Fremont": {
+      "White": {
+        "total": 340,
+        "hispanic": 58,
+        "not_hispanic": 281,
+        "unknown": 1,
+        "not_reported": 0
+      },
+      "Black or African American": {
+        "total": 11,
+        "hispanic": 0,
+        "not_hispanic": 11,
+        "unknown": 0,
+        "not_reported": 0
+      },
+      "American Indian or Alaska Native": {
+        "total": 6,
+        "hispanic": 1,
+        "not_hispanic": 5,
+        "unknown": 0,
+        "not_reported": 0
+      },
+      "Asian": {
+        "total": 4,
+        "hispanic": 1,
+        "not_hispanic": 3,
+        "unknown": 0,
+        "not_reported": 0
+      },
+      "Unknown": {
+        "total": 2,
+        "hispanic": 0,
+        "not_hispanic": 2,
+        "unknown": 0,
+        "not_reported": 0
+      }
+    },
+    "Gem": {
+      "White": {
+        "total": 242,
+        "hispanic": 17,
+        "not_hispanic": 108,
+        "unknown": 4,
+        "not_reported": 113
+      },
+      "Black or African American": {
+        "total": 3,
+        "hispanic": 0,
+        "not_hispanic": 2,
+        "unknown": 0,
+        "not_reported": 1
+      },
+      "Asian": {
+        "total": 4,
+        "hispanic": 0,
+        "not_hispanic": 1,
+        "unknown": 1,
+        "not_reported": 2
+      },
+      "Unknown": {
+        "total": 23,
+        "hispanic": 6,
         "not_hispanic": 4,
         "unknown": 0,
         "not_reported": 13
       }
     },
-    "Bonneville": {
+    "Gooding": {
       "White": {
-        "total": 1538,
-        "hispanic": 346,
-        "not_hispanic": 1143,
-        "unknown": 40,
-        "not_reported": 9
-      },
-      "Black or African American": {
-        "total": 47,
-        "hispanic": 2,
-        "not_hispanic": 45,
-        "unknown": 0,
-        "not_reported": 0
-      },
-      "American Indian or Alaska Native": {
-        "total": 33,
-        "hispanic": 4,
-        "not_hispanic": 25,
-        "unknown": 4,
-        "not_reported": 0
-      },
-      "Asian": {
-        "total": 11,
-        "hispanic": 2,
-        "not_hispanic": 9,
-        "unknown": 0,
-        "not_reported": 0
-      },
-      "Unknown": {
-        "total": 54,
-        "hispanic": 25,
-        "not_hispanic": 9,
-        "unknown": 20,
-        "not_reported": 0
-      }
-    },
-    "Boundary": {
-      "White": {
-        "total": 12,
-        "hispanic": 0,
-        "not_hispanic": 11,
+        "total": 241,
+        "hispanic": 104,
+        "not_hispanic": 136,
         "unknown": 1,
         "not_reported": 0
       },
@@ -356,15 +689,200 @@
         "not_reported": 0
       },
       "American Indian or Alaska Native": {
-        "total": 2,
+        "total": 3,
         "hispanic": 0,
-        "not_hispanic": 2,
+        "not_hispanic": 3,
+        "unknown": 0,
+        "not_reported": 0
+      },
+      "Asian": {
+        "total": 1,
+        "hispanic": 0,
+        "not_hispanic": 1,
+        "unknown": 0,
+        "not_reported": 0
+      },
+      "Unknown": {
+        "total": 2,
+        "hispanic": 2,
+        "not_hispanic": 0,
         "unknown": 0,
         "not_reported": 0
       }
     },
-    "Butte": {
+    "Idaho": {
       "White": {
+        "total": 325,
+        "hispanic": 0,
+        "not_hispanic": 0,
+        "unknown": 0,
+        "not_reported": 325
+      },
+      "Black or African American": {
+        "total": 3,
+        "hispanic": 0,
+        "not_hispanic": 0,
+        "unknown": 0,
+        "not_reported": 3
+      },
+      "American Indian or Alaska Native": {
+        "total": 13,
+        "hispanic": 0,
+        "not_hispanic": 0,
+        "unknown": 0,
+        "not_reported": 13
+      },
+      "Unknown": {
+        "total": 16,
+        "hispanic": 0,
+        "not_hispanic": 0,
+        "unknown": 0,
+        "not_reported": 16
+      }
+    },
+    "Jefferson": {
+      "White": {
+        "total": 342,
+        "hispanic": 73,
+        "not_hispanic": 269,
+        "unknown": 0,
+        "not_reported": 0
+      },
+      "Black or African American": {
+        "total": 4,
+        "hispanic": 0,
+        "not_hispanic": 4,
+        "unknown": 0,
+        "not_reported": 0
+      },
+      "American Indian or Alaska Native": {
+        "total": 1,
+        "hispanic": 1,
+        "not_hispanic": 0,
+        "unknown": 0,
+        "not_reported": 0
+      },
+      "Asian": {
+        "total": 1,
+        "hispanic": 0,
+        "not_hispanic": 1,
+        "unknown": 0,
+        "not_reported": 0
+      }
+    },
+    "Jerome": {
+      "White": {
+        "total": 577,
+        "hispanic": 289,
+        "not_hispanic": 278,
+        "unknown": 9,
+        "not_reported": 1
+      },
+      "Black or African American": {
+        "total": 11,
+        "hispanic": 0,
+        "not_hispanic": 11,
+        "unknown": 0,
+        "not_reported": 0
+      },
+      "American Indian or Alaska Native": {
+        "total": 4,
+        "hispanic": 1,
+        "not_hispanic": 3,
+        "unknown": 0,
+        "not_reported": 0
+      },
+      "Unknown": {
+        "total": 22,
+        "hispanic": 3,
+        "not_hispanic": 1,
+        "unknown": 13,
+        "not_reported": 5
+      }
+    },
+    "Kootenai": {
+      "White": {
+        "total": 5974,
+        "hispanic": 124,
+        "not_hispanic": 3588,
+        "unknown": 43,
+        "not_reported": 2219
+      },
+      "Black or African American": {
+        "total": 221,
+        "hispanic": 0,
+        "not_hispanic": 119,
+        "unknown": 10,
+        "not_reported": 92
+      },
+      "American Indian or Alaska Native": {
+        "total": 141,
+        "hispanic": 0,
+        "not_hispanic": 93,
+        "unknown": 5,
+        "not_reported": 43
+      },
+      "Asian": {
+        "total": 41,
+        "hispanic": 0,
+        "not_hispanic": 22,
+        "unknown": 0,
+        "not_reported": 19
+      },
+      "Unknown": {
+        "total": 99,
+        "hispanic": 0,
+        "not_hispanic": 9,
+        "unknown": 16,
+        "not_reported": 74
+      }
+    },
+    "Latah": {
+      "White": {
+        "total": 610,
+        "hispanic": 21,
+        "not_hispanic": 288,
+        "unknown": 6,
+        "not_reported": 295
+      },
+      "Black or African American": {
+        "total": 17,
+        "hispanic": 0,
+        "not_hispanic": 5,
+        "unknown": 0,
+        "not_reported": 12
+      },
+      "American Indian or Alaska Native": {
+        "total": 33,
+        "hispanic": 2,
+        "not_hispanic": 17,
+        "unknown": 0,
+        "not_reported": 14
+      },
+      "Asian": {
+        "total": 8,
+        "hispanic": 1,
+        "not_hispanic": 4,
+        "unknown": 0,
+        "not_reported": 3
+      },
+      "Unknown": {
+        "total": 108,
+        "hispanic": 1,
+        "not_hispanic": 2,
+        "unknown": 0,
+        "not_reported": 105
+      }
+    },
+    "Lemhi": {
+      "White": {
+        "total": 88,
+        "hispanic": 1,
+        "not_hispanic": 0,
+        "unknown": 0,
+        "not_reported": 87
+      },
+      "Unknown": {
         "total": 6,
         "hispanic": 0,
         "not_hispanic": 0,
@@ -372,256 +890,75 @@
         "not_reported": 6
       }
     },
-    "Camas": {},
-    "Canyon": {
+    "Lewis": {
       "White": {
-        "total": 1425,
-        "hispanic": 512,
-        "not_hispanic": 778,
-        "unknown": 2,
-        "not_reported": 133
-      },
-      "Black or African American": {
-        "total": 32,
-        "hispanic": 2,
-        "not_hispanic": 27,
-        "unknown": 1,
-        "not_reported": 2
-      },
-      "American Indian or Alaska Native": {
-        "total": 12,
-        "hispanic": 2,
-        "not_hispanic": 10,
-        "unknown": 0,
-        "not_reported": 0
-      },
-      "Asian": {
-        "total": 10,
+        "total": 13,
         "hispanic": 0,
-        "not_hispanic": 1,
-        "unknown": 6,
-        "not_reported": 3
-      },
-      "Unknown": {
-        "total": 3,
-        "hispanic": 0,
-        "not_hispanic": 0,
-        "unknown": 0,
-        "not_reported": 3
-      }
-    },
-    "Caribou": {
-      "White": {
-        "total": 31,
-        "hispanic": 2,
         "not_hispanic": 13,
         "unknown": 0,
-        "not_reported": 16
-      },
-      "Black or African American": {
-        "total": 2,
-        "hispanic": 0,
-        "not_hispanic": 0,
-        "unknown": 0,
+        "not_reported": 0
+      }
+    },
+    "Lincoln": {
+      "White": {
+        "total": 79,
+        "hispanic": 33,
+        "not_hispanic": 38,
+        "unknown": 6,
         "not_reported": 2
       },
       "Unknown": {
-        "total": 4,
-        "hispanic": 0,
-        "not_hispanic": 1,
-        "unknown": 0,
-        "not_reported": 3
-      }
-    },
-    "Cassia": {
-      "White": {
-        "total": 24,
-        "hispanic": 12,
-        "not_hispanic": 9,
-        "unknown": 3,
-        "not_reported": 0
-      }
-    },
-    "Clark": {
-      "White": {
-        "total": 2,
-        "hispanic": 0,
+        "total": 26,
+        "hispanic": 3,
         "not_hispanic": 2,
-        "unknown": 0,
-        "not_reported": 0
+        "unknown": 11,
+        "not_reported": 10
       }
     },
-    "Clearwater": {
+    "Madison": {
       "White": {
-        "total": 3,
-        "hispanic": 0,
-        "not_hispanic": 2,
-        "unknown": 1,
+        "total": 537,
+        "hispanic": 115,
+        "not_hispanic": 407,
+        "unknown": 15,
         "not_reported": 0
       },
-      "Unknown": {
-        "total": 2,
-        "hispanic": 0,
+      "Black or African American": {
+        "total": 16,
+        "hispanic": 1,
+        "not_hispanic": 15,
+        "unknown": 0,
+        "not_reported": 0
+      },
+      "American Indian or Alaska Native": {
+        "total": 1,
+        "hispanic": 1,
         "not_hispanic": 0,
+        "unknown": 0,
+        "not_reported": 0
+      },
+      "Asian": {
+        "total": 9,
+        "hispanic": 0,
+        "not_hispanic": 7,
         "unknown": 2,
         "not_reported": 0
-      }
-    },
-    "Custer": {
-      "White": {
-        "total": 21,
-        "hispanic": 1,
-        "not_hispanic": 20,
-        "unknown": 0,
-        "not_reported": 0
-      }
-    },
-    "Elmore": {
-      "White": {
-        "total": 170,
-        "hispanic": 20,
-        "not_hispanic": 135,
-        "unknown": 5,
-        "not_reported": 10
-      },
-      "Black or African American": {
-        "total": 10,
-        "hispanic": 0,
-        "not_hispanic": 8,
-        "unknown": 0,
-        "not_reported": 2
-      },
-      "American Indian or Alaska Native": {
-        "total": 1,
-        "hispanic": 0,
-        "not_hispanic": 1,
-        "unknown": 0,
-        "not_reported": 0
-      },
-      "Asian": {
-        "total": 6,
-        "hispanic": 1,
-        "not_hispanic": 5,
-        "unknown": 0,
-        "not_reported": 0
-      }
-    },
-    "Franklin": {
-      "White": {
-        "total": 11,
-        "hispanic": 0,
-        "not_hispanic": 0,
-        "unknown": 0,
-        "not_reported": 11
-      },
-      "Black or African American": {
-        "total": 1,
-        "hispanic": 0,
-        "not_hispanic": 0,
-        "unknown": 0,
-        "not_reported": 1
-      }
-    },
-    "Fremont": {},
-    "Gem": {
-      "White": {
-        "total": 148,
-        "hispanic": 5,
-        "not_hispanic": 49,
-        "unknown": 1,
-        "not_reported": 93
-      },
-      "Black or African American": {
-        "total": 1,
-        "hispanic": 0,
-        "not_hispanic": 1,
-        "unknown": 0,
-        "not_reported": 0
       },
       "Unknown": {
-        "total": 3,
-        "hispanic": 0,
-        "not_hispanic": 0,
-        "unknown": 1,
-        "not_reported": 2
-      }
-    },
-    "Gooding": {
-      "White": {
-        "total": 68,
-        "hispanic": 24,
-        "not_hispanic": 44,
-        "unknown": 0,
-        "not_reported": 0
-      },
-      "Black or African American": {
-        "total": 2,
-        "hispanic": 0,
-        "not_hispanic": 2,
-        "unknown": 0,
-        "not_reported": 0
-      }
-    },
-    "Idaho": {
-      "White": {
-        "total": 26,
-        "hispanic": 0,
-        "not_hispanic": 0,
-        "unknown": 0,
-        "not_reported": 26
-      },
-      "Black or African American": {
-        "total": 2,
-        "hispanic": 0,
-        "not_hispanic": 0,
-        "unknown": 0,
-        "not_reported": 2
-      },
-      "Unknown": {
-        "total": 1,
-        "hispanic": 0,
-        "not_hispanic": 0,
-        "unknown": 0,
-        "not_reported": 1
-      }
-    },
-    "Jefferson": {
-      "White": {
-        "total": 143,
-        "hispanic": 28,
-        "not_hispanic": 115,
-        "unknown": 0,
-        "not_reported": 0
-      },
-      "Black or African American": {
-        "total": 2,
-        "hispanic": 0,
-        "not_hispanic": 2,
-        "unknown": 0,
-        "not_reported": 0
-      },
-      "American Indian or Alaska Native": {
-        "total": 2,
-        "hispanic": 1,
+        "total": 17,
+        "hispanic": 9,
         "not_hispanic": 1,
-        "unknown": 0,
-        "not_reported": 0
-      },
-      "Asian": {
-        "total": 2,
-        "hispanic": 0,
-        "not_hispanic": 2,
-        "unknown": 0,
+        "unknown": 7,
         "not_reported": 0
       }
     },
-    "Jerome": {
+    "Minidoka": {
       "White": {
-        "total": 335,
-        "hispanic": 193,
-        "not_hispanic": 138,
-        "unknown": 3,
-        "not_reported": 1
+        "total": 670,
+        "hispanic": 263,
+        "not_hispanic": 387,
+        "unknown": 14,
+        "not_reported": 6
       },
       "Black or African American": {
         "total": 6,
@@ -631,225 +968,87 @@
         "not_reported": 0
       },
       "American Indian or Alaska Native": {
-        "total": 1,
+        "total": 4,
         "hispanic": 0,
-        "not_hispanic": 1,
+        "not_hispanic": 4,
         "unknown": 0,
         "not_reported": 0
       },
       "Asian": {
-        "total": 1,
-        "hispanic": 0,
-        "not_hispanic": 1,
-        "unknown": 0,
-        "not_reported": 0
-      },
-      "Unknown": {
-        "total": 9,
-        "hispanic": 3,
-        "not_hispanic": 2,
-        "unknown": 3,
-        "not_reported": 1
-      }
-    },
-    "Kootenai": {
-      "White": {
-        "total": 2187,
-        "hispanic": 42,
-        "not_hispanic": 1451,
-        "unknown": 28,
-        "not_reported": 666
-      },
-      "Black or African American": {
-        "total": 71,
-        "hispanic": 0,
-        "not_hispanic": 42,
-        "unknown": 2,
-        "not_reported": 27
-      },
-      "American Indian or Alaska Native": {
-        "total": 43,
-        "hispanic": 0,
-        "not_hispanic": 30,
-        "unknown": 3,
-        "not_reported": 10
-      },
-      "Asian": {
-        "total": 16,
-        "hispanic": 1,
-        "not_hispanic": 10,
-        "unknown": 0,
-        "not_reported": 5
-      },
-      "Unknown": {
-        "total": 22,
-        "hispanic": 0,
-        "not_hispanic": 1,
-        "unknown": 6,
-        "not_reported": 15
-      }
-    },
-    "Latah": {
-      "White": {
-        "total": 209,
-        "hispanic": 3,
-        "not_hispanic": 61,
-        "unknown": 0,
-        "not_reported": 145
-      },
-      "Black or African American": {
-        "total": 11,
-        "hispanic": 0,
-        "not_hispanic": 2,
-        "unknown": 0,
-        "not_reported": 9
-      },
-      "American Indian or Alaska Native": {
-        "total": 3,
-        "hispanic": 0,
-        "not_hispanic": 1,
-        "unknown": 0,
-        "not_reported": 2
-      },
-      "Unknown": {
-        "total": 55,
-        "hispanic": 0,
-        "not_hispanic": 0,
-        "unknown": 0,
-        "not_reported": 55
-      }
-    },
-    "Lemhi": {
-      "White": {
-        "total": 27,
-        "hispanic": 0,
-        "not_hispanic": 0,
-        "unknown": 0,
-        "not_reported": 27
-      },
-      "Unknown": {
-        "total": 3,
-        "hispanic": 0,
-        "not_hispanic": 0,
-        "unknown": 0,
-        "not_reported": 3
-      }
-    },
-    "Lewis": {
-      "White": {
-        "total": 8,
-        "hispanic": 0,
-        "not_hispanic": 8,
-        "unknown": 0,
-        "not_reported": 0
-      },
-      "Black or African American": {
-        "total": 1,
-        "hispanic": 0,
-        "not_hispanic": 1,
-        "unknown": 0,
-        "not_reported": 0
-      }
-    },
-    "Lincoln": {
-      "White": {
-        "total": 37,
-        "hispanic": 8,
-        "not_hispanic": 22,
-        "unknown": 1,
-        "not_reported": 6
-      },
-      "Unknown": {
-        "total": 3,
-        "hispanic": 0,
-        "not_hispanic": 0,
-        "unknown": 1,
-        "not_reported": 2
-      }
-    },
-    "Madison": {
-      "White": {
-        "total": 74,
-        "hispanic": 12,
-        "not_hispanic": 62,
-        "unknown": 0,
-        "not_reported": 0
-      },
-      "Black or African American": {
         "total": 2,
         "hispanic": 0,
         "not_hispanic": 2,
         "unknown": 0,
         "not_reported": 0
-      },
-      "Asian": {
-        "total": 1,
-        "hispanic": 0,
-        "not_hispanic": 1,
-        "unknown": 0,
-        "not_reported": 0
-      },
-      "Unknown": {
-        "total": 3,
-        "hispanic": 2,
-        "not_hispanic": 0,
-        "unknown": 1,
-        "not_reported": 0
-      }
-    },
-    "Minidoka": {
-      "White": {
-        "total": 120,
-        "hispanic": 47,
-        "not_hispanic": 51,
-        "unknown": 0,
-        "not_reported": 22
       }
     },
     "Nez Perce": {
       "White": {
-        "total": 754,
-        "hispanic": 14,
-        "not_hispanic": 375,
+        "total": 1732,
+        "hispanic": 24,
+        "not_hispanic": 952,
         "unknown": 0,
-        "not_reported": 365
+        "not_reported": 756
       },
       "Black or African American": {
-        "total": 19,
+        "total": 45,
         "hispanic": 0,
-        "not_hispanic": 7,
+        "not_hispanic": 9,
         "unknown": 0,
-        "not_reported": 12
+        "not_reported": 36
       },
       "American Indian or Alaska Native": {
-        "total": 101,
-        "hispanic": 0,
-        "not_hispanic": 56,
+        "total": 178,
+        "hispanic": 1,
+        "not_hispanic": 116,
         "unknown": 0,
-        "not_reported": 45
+        "not_reported": 61
       },
       "Asian": {
-        "total": 1,
-        "hispanic": 0,
-        "not_hispanic": 1,
+        "total": 6,
+        "hispanic": 1,
+        "not_hispanic": 0,
         "unknown": 0,
-        "not_reported": 0
+        "not_reported": 5
       },
       "Unknown": {
-        "total": 112,
+        "total": 196,
         "hispanic": 0,
-        "not_hispanic": 17,
+        "not_hispanic": 37,
         "unknown": 0,
-        "not_reported": 95
+        "not_reported": 159
       }
     },
     "Oneida": {
       "White": {
-        "total": 25,
-        "hispanic": 0,
-        "not_hispanic": 5,
+        "total": 86,
+        "hispanic": 3,
+        "not_hispanic": 22,
         "unknown": 0,
-        "not_reported": 20
+        "not_reported": 61
+      },
+      "Unknown": {
+        "total": 10,
+        "hispanic": 0,
+        "not_hispanic": 0,
+        "unknown": 0,
+        "not_reported": 10
+      }
+    },
+    "Owyhee": {
+      "White": {
+        "total": 68,
+        "hispanic": 21,
+        "not_hispanic": 22,
+        "unknown": 9,
+        "not_reported": 16
+      },
+      "Black or African American": {
+        "total": 2,
+        "hispanic": 0,
+        "not_hispanic": 1,
+        "unknown": 1,
+        "not_reported": 0
       },
       "American Indian or Alaska Native": {
         "total": 1,
@@ -858,152 +1057,229 @@
         "unknown": 0,
         "not_reported": 0
       },
-      "Asian": {
-        "total": 1,
-        "hispanic": 0,
-        "not_hispanic": 0,
-        "unknown": 0,
+      "Unknown": {
+        "total": 10,
+        "hispanic": 4,
+        "not_hispanic": 2,
+        "unknown": 3,
         "not_reported": 1
       }
     },
-    "Owyhee": {},
     "Payette": {
       "White": {
-        "total": 301,
-        "hispanic": 68,
-        "not_hispanic": 192,
-        "unknown": 41,
+        "total": 1129,
+        "hispanic": 250,
+        "not_hispanic": 825,
+        "unknown": 54,
         "not_reported": 0
       },
       "Black or African American": {
-        "total": 4,
+        "total": 9,
         "hispanic": 0,
-        "not_hispanic": 3,
-        "unknown": 1,
+        "not_hispanic": 7,
+        "unknown": 2,
+        "not_reported": 0
+      },
+      "Asian": {
+        "total": 9,
+        "hispanic": 1,
+        "not_hispanic": 8,
+        "unknown": 0,
         "not_reported": 0
       },
       "Unknown": {
-        "total": 34,
-        "hispanic": 7,
+        "total": 80,
+        "hispanic": 18,
         "not_hispanic": 3,
-        "unknown": 24,
+        "unknown": 59,
         "not_reported": 0
       }
     },
     "Power": {
       "White": {
-        "total": 112,
-        "hispanic": 28,
-        "not_hispanic": 54,
+        "total": 147,
+        "hispanic": 53,
+        "not_hispanic": 72,
         "unknown": 0,
-        "not_reported": 30
+        "not_reported": 22
       },
       "Black or African American": {
-        "total": 2,
-        "hispanic": 0,
-        "not_hispanic": 2,
-        "unknown": 0,
-        "not_reported": 0
-      },
-      "American Indian or Alaska Native": {
-        "total": 6,
-        "hispanic": 1,
-        "not_hispanic": 4,
-        "unknown": 0,
-        "not_reported": 1
-      },
-      "Unknown": {
-        "total": 1,
-        "hispanic": 0,
-        "not_hispanic": 0,
-        "unknown": 0,
-        "not_reported": 1
-      }
-    },
-    "Shoshone": {
-      "White": {
-        "total": 12,
-        "hispanic": 0,
-        "not_hispanic": 12,
-        "unknown": 0,
-        "not_reported": 0
-      }
-    },
-    "Teton": {},
-    "Twin Falls": {
-      "White": {
-        "total": 1117,
-        "hispanic": 266,
-        "not_hispanic": 842,
-        "unknown": 8,
-        "not_reported": 1
-      },
-      "Black or African American": {
-        "total": 47,
-        "hispanic": 0,
-        "not_hispanic": 47,
-        "unknown": 0,
-        "not_reported": 0
-      },
-      "American Indian or Alaska Native": {
         "total": 5,
         "hispanic": 0,
         "not_hispanic": 5,
         "unknown": 0,
         "not_reported": 0
       },
-      "Asian": {
-        "total": 16,
+      "American Indian or Alaska Native": {
+        "total": 6,
         "hispanic": 0,
-        "not_hispanic": 16,
+        "not_hispanic": 5,
         "unknown": 0,
-        "not_reported": 0
+        "not_reported": 1
       },
-      "Unknown": {
-        "total": 16,
-        "hispanic": 2,
-        "not_hispanic": 1,
-        "unknown": 8,
-        "not_reported": 5
-      }
-    },
-    "Valley": {
-      "White": {
-        "total": 145,
-        "hispanic": 6,
-        "not_hispanic": 133,
-        "unknown": 2,
-        "not_reported": 4
-      },
-      "Black or African American": {
+      "Asian": {
         "total": 2,
         "hispanic": 0,
         "not_hispanic": 2,
         "unknown": 0,
         "not_reported": 0
       },
-      "Asian": {
+      "Unknown": {
         "total": 3,
         "hispanic": 0,
-        "not_hispanic": 3,
+        "not_hispanic": 0,
+        "unknown": 0,
+        "not_reported": 3
+      }
+    },
+    "Shoshone": {
+      "White": {
+        "total": 554,
+        "hispanic": 10,
+        "not_hispanic": 544,
+        "unknown": 0,
+        "not_reported": 0
+      },
+      "Black or African American": {
+        "total": 8,
+        "hispanic": 0,
+        "not_hispanic": 8,
+        "unknown": 0,
+        "not_reported": 0
+      },
+      "American Indian or Alaska Native": {
+        "total": 20,
+        "hispanic": 0,
+        "not_hispanic": 20,
+        "unknown": 0,
+        "not_reported": 0
+      },
+      "Asian": {
+        "total": 2,
+        "hispanic": 0,
+        "not_hispanic": 2,
+        "unknown": 0,
+        "not_reported": 0
+      },
+      "Unknown": {
+        "total": 2,
+        "hispanic": 0,
+        "not_hispanic": 2,
+        "unknown": 0,
+        "not_reported": 0
+      }
+    },
+    "Teton": {
+      "White": {
+        "total": 200,
+        "hispanic": 94,
+        "not_hispanic": 104,
+        "unknown": 2,
+        "not_reported": 0
+      },
+      "Unknown": {
+        "total": 4,
+        "hispanic": 2,
+        "not_hispanic": 1,
+        "unknown": 1,
+        "not_reported": 0
+      }
+    },
+    "Twin Falls": {
+      "White": {
+        "total": 2341,
+        "hispanic": 630,
+        "not_hispanic": 1695,
+        "unknown": 14,
+        "not_reported": 2
+      },
+      "Black or African American": {
+        "total": 88,
+        "hispanic": 0,
+        "not_hispanic": 86,
+        "unknown": 2,
+        "not_reported": 0
+      },
+      "American Indian or Alaska Native": {
+        "total": 9,
+        "hispanic": 2,
+        "not_hispanic": 7,
+        "unknown": 0,
+        "not_reported": 0
+      },
+      "Asian": {
+        "total": 30,
+        "hispanic": 3,
+        "not_hispanic": 27,
+        "unknown": 0,
+        "not_reported": 0
+      },
+      "Unknown": {
+        "total": 23,
+        "hispanic": 3,
+        "not_hispanic": 2,
+        "unknown": 9,
+        "not_reported": 9
+      }
+    },
+    "Valley": {
+      "White": {
+        "total": 262,
+        "hispanic": 18,
+        "not_hispanic": 238,
+        "unknown": 1,
+        "not_reported": 5
+      },
+      "Black or African American": {
+        "total": 7,
+        "hispanic": 0,
+        "not_hispanic": 7,
+        "unknown": 0,
+        "not_reported": 0
+      },
+      "Asian": {
+        "total": 1,
+        "hispanic": 1,
+        "not_hispanic": 0,
         "unknown": 0,
         "not_reported": 0
       }
     },
     "Washington": {
       "White": {
-        "total": 30,
-        "hispanic": 5,
-        "not_hispanic": 20,
-        "unknown": 1,
-        "not_reported": 4
+        "total": 253,
+        "hispanic": 22,
+        "not_hispanic": 195,
+        "unknown": 9,
+        "not_reported": 27
+      },
+      "Black or African American": {
+        "total": 3,
+        "hispanic": 0,
+        "not_hispanic": 3,
+        "unknown": 0,
+        "not_reported": 0
+      },
+      "American Indian or Alaska Native": {
+        "total": 1,
+        "hispanic": 0,
+        "not_hispanic": 1,
+        "unknown": 0,
+        "not_reported": 0
+      },
+      "Asian": {
+        "total": 1,
+        "hispanic": 0,
+        "not_hispanic": 1,
+        "unknown": 0,
+        "not_reported": 0
       },
       "Unknown": {
-        "total": 12,
-        "hispanic": 2,
-        "not_hispanic": 1,
-        "unknown": 6,
-        "not_reported": 3
+        "total": 87,
+        "hispanic": 5,
+        "not_hispanic": 6,
+        "unknown": 38,
+        "not_reported": 38
       }
     }
   },
