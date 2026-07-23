@@ -728,6 +728,37 @@
   </div>
 </section>
 
+<section class="countytable-section" id="registrySection">
+  <div class="countytable-inner">
+    <div class="section-kicker">A Different Problem</div>
+    <h2 class="section-title">Registries That <span>Don't Even Try</span></h2>
+    <p class="county-note">This is a separate finding from the arrest-data scorecard above — not "hidden in White," but
+      "never tracked at all." Sex offender registries are public safety lookup tools, not built for aggregate
+      reporting the way UCR crime data is. We read only the public Race field from each registrant record to build a
+      statistical tally — no names, addresses, photos, or other identifying details were stored anywhere in this
+      process. Idaho's registry has no Ethnicity field whatsoever, so unlike arrest data, there's no way to even
+      partially recover how many "White" registrants are Hispanic or MENA — that population is simply invisible here,
+      with no hidden field left to check.</p>
+    <div class="county-table-wrap">
+      <table class="county-table" id="registryTable">
+        <thead>
+          <tr>
+            <th>State</th>
+            <th>Has Ethnicity Field?</th>
+            <th>Registrants Scanned</th>
+            <th>White</th>
+            <th>Black</th>
+            <th>Am. Indian/AK Native</th>
+            <th>Asian/PI</th>
+            <th>Unknown</th>
+          </tr>
+        </thead>
+        <tbody id="registryTableBody"></tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
 <section class="countytable-section">
   <div class="countytable-inner">
     <div class="section-kicker">Idaho, County by County</div>
@@ -889,8 +920,39 @@ async function loadScorecard() {
   });
 }
 
+async function loadRegistryData() {
+  const files = [{ state: 'Idaho', file: 'data/idaho_sor_race_tally.json' }];
+  const tbody = document.getElementById('registryTableBody');
+
+  for (const { state, file } of files) {
+    let d;
+    try {
+      const resp = await fetch(file, { cache: 'no-store' });
+      if (!resp.ok) continue;
+      d = await resp.json();
+    } catch (err) {
+      console.error('Registry load failed for', state, err);
+      continue;
+    }
+    const r = d.race_totals;
+    const tr = document.createElement('tr');
+    tr.innerHTML = `
+      <td class="county-name">${state}</td>
+      <td class="unk">No</td>
+      <td>${d.grand_total_scanned.toLocaleString()} of ${d.grand_total_claimed.toLocaleString()}</td>
+      <td>${(r['WHITE']||0).toLocaleString()}</td>
+      <td>${(r['BLACK']||0).toLocaleString()}</td>
+      <td>${(r['AMERICAN INDIAN OR ALASKAN NATIVE']||0).toLocaleString()}</td>
+      <td>${(r['ASIAN OR PACIFIC ISLANDER']||0).toLocaleString()}</td>
+      <td class="unk">${(r['UNKNOWN']||0).toLocaleString()}</td>
+    `;
+    tbody.appendChild(tr);
+  }
+}
+
 loadCrimeClarityData();
 loadScorecard();
+loadRegistryData();
 </script>
 
 </body>
