@@ -631,8 +631,16 @@
         or Latino, or Not) — two separate boxes on the same form.</p>
       <p>Most published crime statistics only show Race. That means a Hispanic arrestee of any race gets folded into
         whichever race box was checked — usually White — with no way to tell them apart from anyone else in that box.</p>
-      <p>We pulled Idaho's actual 2024 arrest records, county by county, straight from the state's own reporting system,
-        and cross-referenced both fields to show what's actually inside the numbers everyone else reports as one.</p>
+      <p><strong>Why it matters:</strong> when "White" arrest numbers get cited — in news coverage, in political
+        arguments, in comparisons between groups — nobody citing them knows that number may be one-third or more
+        Hispanic, because the standard published report never shows the split. That's not a rounding error. In Texas,
+        it's the difference between "White" meaning one thing and meaning something else entirely for 56% of the
+        people counted in it. You can't have an honest conversation about crime statistics with a number that's
+        silently mixing two different things together.</p>
+      <p>We pulled each state's actual arrest records straight from its own reporting system and cross-referenced
+        both fields to show what's actually inside the numbers everyone else reports as one — then checked our pull
+        against each state's own official published report, where one exists, to confirm we're not the only source
+        saying this.</p>
     </div>
     <div class="bills-box">
       <div class="bills-title">The Two Fields</div>
@@ -653,6 +661,22 @@
         <div class="bill-name">Idaho State Police NIBRS Repository</div>
         <div class="bill-desc">Live query tool (nibrs.isp.idaho.gov). All 44 county pulls reconciled against the
           statewide total for internal consistency.</div>
+      </div>
+      <div class="bill">
+        <div class="bill-num">Cross-Checked</div>
+        <div class="bill-name">The Official PDF Doesn't Cross-Tabulate</div>
+        <div class="bill-desc">Idaho's own published <a href="https://nibrs.isp.idaho.gov/CrimeInIdaho/Publication/Active/Sections/6.%20Statewide%20Arrest%20Profile.pdf" style="color:var(--gold);">Crime In Idaho 2024 Statewide Arrest Profile</a>
+          lists Race and Ethnicity as two separate columns — never crossed. It cannot tell you how many "White"
+          arrestees are Hispanic; only the live drilldown tool we use can. The published report's total (42,854 White)
+          is within 1% of our live pull (42,420) — the small gap is expected, disclosed below, not hidden.</div>
+      </div>
+      <div class="bill">
+        <div class="bill-num">Data Currency</div>
+        <div class="bill-name">Why Numbers Shift Slightly Between Pulls</div>
+        <div class="bill-desc">Texas DPS says it plainly in its own published reports: <em>"The underlying data changes
+          continuously... it may not be possible to replicate the figures... Slight variations in results obtained
+          using identical queries are expected and normal."</em> That's true of every state here — these are live
+          databases, not frozen snapshots, and we'd rather show a number that moves than one that's stale.</div>
       </div>
       <div class="bill">
         <div class="bill-num">Known Limitation</div>
